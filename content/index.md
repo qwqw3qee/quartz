@@ -8,7 +8,7 @@ tags:
   - 首页
   - 目录
 path: content
-en-title: index
+en-filename: index
 title: 🏡首页
 ---
  ![[./Z-Others/icons/avatar.png|128]]
