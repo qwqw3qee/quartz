@@ -10,7 +10,7 @@ dg-publish: true
 
 下面请看个具体例子：
 
-```Go
+```go
 func main() {         
     defer func() {                 
         if error:=recover();error!=nil{   
@@ -25,7 +25,7 @@ func main() {
 
 运行结果：
 
-```Go
+```go
 11111111111
 出现了panic,使用reover获取信息: 出现panic
 ```
@@ -40,7 +40,7 @@ func main() {
 
 看下面例子：
 
-```Go
+```go
 package main
 
 import "fmt"
@@ -75,7 +75,7 @@ func main() {
 
 运行结果：
 
-```Go
+```go
 程序开始
 testPanic1上半部分
 testPanic2上半部分
