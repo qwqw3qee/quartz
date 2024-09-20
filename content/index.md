@@ -9,6 +9,7 @@ tags:
   - 目录
 path: content
 en-title: index
+title: 🏡首页.md
 ---
  ![[./Z-Others/icons/avatar.png|128]]
 Lazyjoy的笔记空间
