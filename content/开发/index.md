@@ -13,14 +13,14 @@ en-filename: index
 ## Golang
 ### 基础使用
 - [[开发/Golang/基础使用/二维数组.md|二维数组]]
-- [[开发/Golang/基础使用/string.md|string]]
 - [[开发/Golang/基础使用/sync.map.md|sync.map]]
-- [[开发/Golang/基础使用/map.md|map]]
-- [[开发/Golang/基础使用/interface.md|interface]]
+- [[开发/Golang/基础使用/string.md|string]]
 - [[开发/Golang/基础使用/go语言异常捕获.md|go语言异常捕获]]
-- [[开发/Golang/基础使用/go基础简明笔记.md|go基础简明笔记]]
 - [[开发/Golang/基础使用/go语言error.md|go语言error]]
+- [[开发/Golang/基础使用/interface.md|interface]]
+- [[开发/Golang/基础使用/map.md|map]]
 - [[开发/Golang/基础使用/defer执行顺序问题.md|defer执行顺序问题]]
+- [[开发/Golang/基础使用/go基础简明笔记.md|go基础简明笔记]]
 - [[开发/Golang/基础使用/context.md|context]]
 - [[开发/Golang/基础使用/channel.md|channel]]
 
