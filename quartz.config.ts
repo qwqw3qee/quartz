@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "LazyJack的空间",
+    pageTitle: "LazyJack",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
