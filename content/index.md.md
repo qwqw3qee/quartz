@@ -8,7 +8,7 @@ tags:
   - 首页
   - 目录
 path: content
-filename: index.md
+en-title: index.md
 ---
  ![[./Z-Others/icons/avatar.png|128]]
 Lazyjoy的笔记空间
