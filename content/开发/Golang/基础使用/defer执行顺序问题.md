@@ -9,7 +9,7 @@ dg-publish: true
 
 看下面例子：
 
-```Go
+```go
 package main
 
 import "fmt"
@@ -30,7 +30,7 @@ func main(){
 
 运行结果：
 
-```Go
+```go
 num is 1
 ```
 
@@ -40,7 +40,7 @@ num is 1
 
 例子2:
 
-```Go
+```go
 package main
 
 import "fmt"
@@ -66,7 +66,7 @@ func printArr(arr *[4]int) {
 
 运行结果：
 
-```Go
+```go
 100
 2
 3
@@ -79,7 +79,7 @@ func printArr(arr *[4]int) {
 
 在看下面例子：
 
-```Go
+```go
 package main
 
 import "fmt"
@@ -102,7 +102,7 @@ func deferRun() (res int) {
 
 运行结果：
 
-```Go
+```go
 2
 ```
 
@@ -117,7 +117,7 @@ func deferRun() (res int) {
 
 继续看下面例子：
 
-```Go
+```go
 package main
 
 import "fmt"
@@ -137,7 +137,7 @@ func deferRun() int {
 }
 ```
 运行结果：
-```Go
+```go
 1
 ```
 
@@ -145,7 +145,7 @@ func deferRun() int {
 
 继续看：
 
-```Go
+```go
 package main
 
 import "fmt"
@@ -167,7 +167,7 @@ func deferRun() int {
 
 运行结果：
 
-```Go
+```go
 1
 ```
 
@@ -175,7 +175,7 @@ func deferRun() int {
 
 接着看：
 
-```Go
+```go
 package main
 
 import "fmt"
@@ -197,7 +197,7 @@ func deferRun() (res int) {
 
 运行结果：
 
-```Go
+```go
 1
 ```
 

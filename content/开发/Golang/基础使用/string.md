@@ -34,7 +34,7 @@ func main() {
 - 字符串不可以被修改，所以字符串类型的值是不可变的
 
 ## string 数据结构
-```Go
+```go
 type stringStruct struct {
    str unsafe.Pointer    //  指向一个byte类型的切片指针
    len int
@@ -50,13 +50,13 @@ byte 切片转化为string，大致过程分为两步：
 2.  构建 string对象，指针地址为addr，len字段赋值为len（string.str = addr；string.len = len；）
 3.  将原切片中数据拷贝到新申请的string中指针指向的内存空间
 
-![](../../../Z-Others/assets/asynccode-2.png)
+![](Z-Others/assets/asynccode-2.png)
 
 string转化为byte数组同样简单，大致分为两步：
 1.  新申请切片内存空间
 2.  将string中指针执行内存区域的内容拷贝到新切片
 
-![](../../../Z-Others/assets/asynccode-3.png)
+![](Z-Others/assets/asynccode-3.png)
 
 ### \[\]byte 转化为 string 是否一定会发生内存拷贝
 很多场景中会用到\[\]byte 转化为 string，但是并不是每一次转化，都会想上述过程一样，发生一次内存拷贝。在什么情况下不会发生拷贝呢？
@@ -70,7 +70,7 @@ string转化为byte数组同样简单，大致分为两步：
 这几种情况下，\[\]byte 转化成的字符串并不会被后面程序用到，只是在当前场景下被临时用到，所以并不会拷贝内存，而是直接返回一个 string，这个 string 的指针 (string.str) 指向切片的内存。
 ## 字面量声明  
 go 语言中以字面量来声明字符串有两种方式，双引号和反引号:
-```Go
+```go
 str1 := "Hello World"
 str2 := `Hello
 Golang`
@@ -86,7 +86,7 @@ Golang`
 ### 性能测试
 采用testing包下benchmark测试其性能
 
-```Go
+```go
 package main
 
 import (

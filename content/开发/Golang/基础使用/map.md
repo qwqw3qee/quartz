@@ -55,11 +55,11 @@ mm["city"] = append(mm["city"], "beijing", "shanghai")
 # 线程安全性
 线程不安全，如果需要线程安全，可通过两个手段
 - [[为什么 Go map 和 slice 是非线程安全的？#对 map 上锁 |使用 RWMutex 上锁]]
-- [[php - 为什么 Go map 和 slice 是非线程安全的？ - 煎鱼的清汤锅 - SegmentFault 思否#sync.Map|使用 sync.Map]]
+- [[为什么 Go map 和 slice 是非线程安全的？#sync.Map|使用 sync.Map]]
 
 # go 语言 map 的底层结构
 ## map 的访问原理
-```Go
+```go
 // 当map中没有对应的key时，会返回value对应类型的零值
 v     := map[key]
 // 当map中没有对应的key时，除了会返回value对应类型的零值,还会返回一个值存不存在的布尔值
