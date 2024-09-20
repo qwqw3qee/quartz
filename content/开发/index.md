@@ -12,24 +12,24 @@ en-filename: index
 ---
 ## Golang
 ### 基础使用
-- [[开发/Golang/基础使用/二维数组.md|二维数组]]
-- [[开发/Golang/基础使用/sync.map.md|sync.map]]
-- [[开发/Golang/基础使用/string.md|string]]
-- [[开发/Golang/基础使用/go语言异常捕获.md|go语言异常捕获]]
-- [[开发/Golang/基础使用/go语言error.md|go语言error]]
-- [[开发/Golang/基础使用/interface.md|interface]]
-- [[开发/Golang/基础使用/map.md|map]]
-- [[开发/Golang/基础使用/defer执行顺序问题.md|defer执行顺序问题]]
-- [[开发/Golang/基础使用/go基础简明笔记.md|go基础简明笔记]]
-- [[开发/Golang/基础使用/context.md|context]]
-- [[开发/Golang/基础使用/channel.md|channel]]
+- [[./Golang/基础使用/二维数组|二维数组]]
+- [[./Golang/基础使用/sync.map|sync.map]]
+- [[./Golang/基础使用/string|string]]
+- [[./Golang/基础使用/go语言异常捕获|go语言异常捕获]]
+- [[./Golang/基础使用/go语言error|go语言error]]
+- [[./Golang/基础使用/interface|interface]]
+- [[./Golang/基础使用/map|map]]
+- [[./Golang/基础使用/defer执行顺序问题|defer执行顺序问题]]
+- [[./Golang/基础使用/go基础简明笔记|go基础简明笔记]]
+- [[./Golang/基础使用/context|context]]
+- [[./Golang/基础使用/channel|channel]]
 
 ### 算法调用与实现
-- [[开发/Golang/算法调用与实现/栈.md|栈]]
-- [[开发/Golang/算法调用与实现/并查集.md|并查集]]
-- [[开发/Golang/算法调用与实现/优先队列（小根堆）.md|优先队列（小根堆）]]
-- [[开发/Golang/算法调用与实现/二分查找.md|二分查找]]
-- [[开发/Golang/算法调用与实现/sort.md|sort]]
+- [[./Golang/算法调用与实现/栈|栈]]
+- [[./Golang/算法调用与实现/并查集|并查集]]
+- [[./Golang/算法调用与实现/优先队列（小根堆）|优先队列（小根堆）]]
+- [[./Golang/算法调用与实现/二分查找|二分查找]]
+- [[./Golang/算法调用与实现/sort|sort]]
 
 ## Vue
-- [[开发/Vue.js/Vue2简明笔记.md|Vue2简明笔记]]
+- [[./Vue.js/Vue2简明笔记|Vue2简明笔记]]
