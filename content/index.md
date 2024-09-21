@@ -11,7 +11,7 @@ en-filename: index
 title: 🏡首页
 ---
  ![[./Z-Others/icons/avatar.png|128]]
-Lazyjoy的笔记空间
+<center>Lazyjoy的笔记空间</center>
 
 ---
 ## 目录  
