@@ -54,7 +54,7 @@ mm["city"] = append(mm["city"], "beijing", "shanghai")
 
 # 线程安全性
 线程不安全，如果需要线程安全，可通过两个手段
-- [[为什么 Go map 和 slice 是非线程安全的？#对 map 上锁 |使用 RWMutex 上锁]]
+- [[为什么 Go map 和 slice 是非线程安全的？#对 map 上锁|使用 RWMutex 上锁]]
 - [[为什么 Go map 和 slice 是非线程安全的？#sync.Map|使用 sync.Map]]
 
 # go 语言 map 的底层结构

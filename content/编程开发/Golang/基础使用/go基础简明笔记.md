@@ -84,9 +84,9 @@ value, ok := x.(T)   // x为接口类型，ok为bool类型
 - 无论 T 是什么类型，如果 x 是 nil 接口值，类型断言都会失败。
 
 ##  `error` 类型
-[[开发/Golang/基础使用/go语言error|开发/Golang/基础使用/go语言error]]
+[[./go语言error|go语言error]]
 ##  `defer` 关键字
-[[开发/Golang/基础使用/defer|开发/Golang/基础使用/defer]]
-[[开发/Golang/基础使用/defer执行顺序问题|开发/Golang/基础使用/defer执行顺序问题]]
+[[./defer|defer]]
+[[./defer执行顺序问题|defer执行顺序问题]]
 ##  `panic/recover` 异常捕获
-[[开发/Golang/基础使用/go语言异常捕获|开发/Golang/基础使用/go语言异常捕获]]
+[[./go语言异常捕获|go语言异常捕获]]
