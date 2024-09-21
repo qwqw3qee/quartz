@@ -29,3 +29,5 @@ dg-publish: true
 
 优点：静态博客通用解决方案，支持[[obsidian发布工具#Quartz|Quartz]]。
 不足：文档不够详细，使用起来略微繁琐。
+## 参考链接
+- [Obsidian实现免费第三方发布的安逸方案\_服务软件\_什么值得买](https://post.smzdm.com/p/90924/)
