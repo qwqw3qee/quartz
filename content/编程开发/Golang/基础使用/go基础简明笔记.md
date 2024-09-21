@@ -86,7 +86,7 @@ value, ok := x.(T)   // x为接口类型，ok为bool类型
 ##  `error` 类型
 [[./go语言error|go语言error]]
 ##  `defer` 关键字
-[[defer|defer]]
+[[./defer|defer]]
 [[./defer执行顺序问题|defer执行顺序问题]]
 ##  `panic/recover` 异常捕获
 [[./go语言异常捕获|go语言异常捕获]]
