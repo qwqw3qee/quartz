@@ -14,18 +14,18 @@ en-filename: index
 - [[./自建anki服务器教程|自建anki服务器教程]]
 - [[./搭建joplin同步服务器|搭建joplin同步服务器]]
 - [[./个人使用字体整理|个人使用字体整理]]
-- [[./word文件代码高亮|word文件代码高亮]]
 - [[./Word 转 PDF—保留图片高分辨率同时不丢失书签 _ 超链接|Word 转 PDF—保留图片高分辨率同时不丢失书签 _ 超链接]]
+- [[./word文件代码高亮|word文件代码高亮]]
 - [[./mobaxterm资源|mobaxterm资源]]
 
 ### 踩坑记录
 - [[./踩坑记录/永久性解决 Visio 中公式变形问题_visio 中公式复制保存会变形|永久性解决 Visio 中公式变形问题_visio 中公式复制保存会变形]]
 - [[./踩坑记录/更改 Windows 11 上的网络适配器优先级|更改 Windows 11 上的网络适配器优先级]]
 - [[./踩坑记录/彻底关闭 Win10 自动更新|彻底关闭 Win10 自动更新]]
-- [[./踩坑记录/supervisor守护进程子进程问题|supervisor守护进程子进程问题]]
 - [[./踩坑记录/win10 怎么关闭自动显卡驱动更新？|win10 怎么关闭自动显卡驱动更新？]]
-- [[./踩坑记录/Visio 里 Mathtype 公式变形问题解决_visio 中 mathtype 变形|Visio 里 Mathtype 公式变形问题解决_visio 中 mathtype 变形]]
 - [[./踩坑记录/VMware 网络配置的坑：SSH 连接慢、Linux 无法上外网|VMware 网络配置的坑：SSH 连接慢、Linux 无法上外网]]
+- [[./踩坑记录/Visio 里 Mathtype 公式变形问题解决_visio 中 mathtype 变形|Visio 里 Mathtype 公式变形问题解决_visio 中 mathtype 变形]]
+- [[./踩坑记录/supervisor守护进程子进程问题|supervisor守护进程子进程问题]]
 
 ### obsidian资源
 - [[./obsidian资源/将 Obsidian 页面按自定义模板导出为 Word 文档|将 Obsidian 页面按自定义模板导出为 Word 文档]]
