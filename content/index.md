@@ -5,7 +5,6 @@ dg-show-local-graph: true
 dg-pinned: true
 dg-path: 🏡首页.md
 tags:
-  - 首页
   - 目录
 path: content
 en-filename: index
