@@ -92,21 +92,9 @@ function OverlayExplorerNode({node, opts, fullPath, fileData}: OlExplorerNodePro
                 </button>
                 {opts.folderClickBehavior === "mixed" && (
                   <a href={href}>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="12"
-                      viewBox="0 4 21 15"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <polyline points="0 9 18 9"></polyline>
-                      <polyline points="0 15 18 15"></polyline>
-                      <polyline points="15 6 21 12 15 18"></polyline>
-                    </svg>
+                      <svg width="20" height="12" xmlns="http://www.w3.org/2000/svg" class="lucide lucide-navigation" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none">
+                        <polygon transform="rotate(25.5735 7.26917 4.48399)" stroke="null" id="svg_1" points="0.26425468921661377,4.115314036607742 14.274086892604828,-2.5209226310253143 7.637851655483246,11.488909751176834 6.1631311774253845,5.590032607316971 0.26425468921661377,4.115314036607742 " />
+                      </svg>
                   </a>
                 )}
                 </>
