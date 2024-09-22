@@ -1,6 +1,6 @@
 // Nothing yet 
 
-import { registerEscapeHandler } from "./util"
+import { registerEscapeHandler } from "../../../components/scripts/util"
 
 type MaybeHTMLElement = HTMLElement | undefined
 

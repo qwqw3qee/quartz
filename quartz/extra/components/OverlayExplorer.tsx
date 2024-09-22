@@ -1,14 +1,14 @@
 // Nothing yet
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../../components/types"
 import overlayexplorerStyle from "./styles/overlayexplorer.scss"
 
 // @ts-ignore
 import script from "./scripts/overlayexplorer.inline"
-import { FileNode, Options } from "./ExplorerNode"
-import { QuartzPluginData } from "../plugins/vfile"
-import { classNames } from "../util/lang"
-import { i18n } from "../i18n"
-import { joinSegments, resolveRelative } from "../util/path"
+import { FileNode, Options } from "../../components/ExplorerNode"
+import { QuartzPluginData } from "../../plugins/vfile"
+import { classNames } from "../../util/lang"
+import { i18n } from "../../i18n"
+import { joinSegments, resolveRelative } from "../../util/path"
 
 interface OlOptions extends Omit<Options, "folderClickBehavior"> {
   folderClickBehavior: "collapse" | "link" | "mixed"
