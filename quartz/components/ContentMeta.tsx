@@ -32,8 +32,9 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       if (fileData.dates && fileData.slug !== "index") {
         if (fileData.dates.created) {
           segments.push(
+            <CalendarPlus size={16} />
             <span>
-              ✍︎ 发布于 {formatDate(fileData.dates.created)}
+              创建于 {formatDate(fileData.dates.created,cfg.locale)}
             </span>,
           )
         }
@@ -41,7 +42,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         if (fileData.dates.modified) {
           segments.push(
             <span>
-              🖋️ 更新于 {formatDate(fileData.dates.modified)}
+              🖋️ 更新于 {formatDate(fileData.dates.modified,cfg.locale)}
             </span>,
           )
         }
