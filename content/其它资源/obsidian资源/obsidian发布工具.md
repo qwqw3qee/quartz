@@ -2,9 +2,12 @@
 tags:
   - obsidian
   - 资源
+  - 数字花园
+  - enveloppe
+  - quartz
 dg-publish: true
 created: 2024-09-19T16:43:56.000+08:00
-updated: 2024-09-23T16:54:36.741+08:00
+updated: 2024-09-23T16:58:30.484+08:00
 ---
 ## 官方publish插件
 核心插件，启用发布功能即可，需要官方订阅。
