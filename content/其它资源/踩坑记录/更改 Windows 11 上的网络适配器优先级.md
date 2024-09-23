@@ -7,6 +7,8 @@ banner_icon: 🔖
 tags:
   - 转载
 dg-publish: true
+created: 2023-08-31T00:59:54.000+08:00
+updated: 2024-09-23T15:56:30.333+08:00
 ---
 > 原文链接：[更改 Windows 11 上的网络适配器优先级_51CTO 博客_Win10 网络适配器各项设置]( https://blog.51cto.com/u_1472521/5113541)
 
