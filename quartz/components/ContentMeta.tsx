@@ -29,11 +29,11 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     if (text) {
       const segments: (string | JSX.Element)[] = []
 
-      if (fileData.dates && fileData.slug !== "index") {
+      if (fileData.dates) {
         if (fileData.dates.created) {
           segments.push(
             <span>
-              ✍ 创建于 {formatDate(fileData.dates.created,cfg.locale)}
+              <CalendarPlus size={16} /> 创建于 {formatDate(fileData.dates.created,cfg.locale)}
             </span>,
           )
         }
@@ -41,7 +41,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         if (fileData.dates.modified) {
           segments.push(
             <span>
-              🖋️ 更新于 {formatDate(fileData.dates.modified,cfg.locale)}
+              <CalendarClock size={16} /> 更新于 {formatDate(fileData.dates.modified,cfg.locale)}
             </span>,
           )
         }
@@ -55,7 +55,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         })
         segments.push(
           <span>
-            ⏱︎ {displayedTime}
+            <Timer size={16} /> {displayedTime}
           </span>)
       }
 
@@ -64,7 +64,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
           href={`https://github.githistory.xyz/qwqw3qee/quartz/commits/v4/${fileData.filePath}`}
           target="_blank"
         >
-          ⏳ 修改记录
+          <Hourglass size={16} /> 修改记录
         </a>,
       )
       const segmentsElements = segments.map((segment) => <span>{segment}</span>)
