@@ -29,7 +29,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     if (text) {
       const segments: (string | JSX.Element)[] = []
 
-      if (fileData.dates && fileData.slug !== "index") {
+      if (fileData.dates) {
         if (fileData.dates.created) {
           segments.push(
             <span>
