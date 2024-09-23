@@ -10,6 +10,8 @@ tags:
   - word
   - pdf
 dg-publish: true
+created: 2024-04-04T10:52:37.000+08:00
+updated: 2024-09-23T15:56:30.405+08:00
 ---
 > 原文链接：[Word 转 PDF—保留图片高分辨率同时不丢失书签 _ 超链接]( https://zhuanlan.zhihu.com/p/611527301?utm_id=0)
 
