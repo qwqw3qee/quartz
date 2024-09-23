@@ -9,6 +9,8 @@ tags:
   - obsidian
   - word
 dg-publish: true
+created: 2023-11-28T16:56:51.000+08:00
+updated: 2024-09-23T15:56:30.419+08:00
 ---
 >原文链接： [一日一技 _ 将 Obsidian 页面按自定义模板导出为 Word 文档]( https://sspai.com/post/84232)
 
