@@ -7,6 +7,8 @@ banner_icon: 🔖
 tags:
   - 转载
 dg-publish: true
+created: 2023-07-05T09:43:15.000+08:00
+updated: 2024-09-23T15:56:30.353+08:00
 ---
 > 原文链接： [VMware 网络配置的坑：SSH 连接慢、Linux 无法上外网_usedns_no_Nishkata 的博客 - CSDN 博客]( https://blog.csdn.net/Nishkata/article/details/127934734)
 
