@@ -2,6 +2,8 @@
 dg-publish: true
 tags:
   - golang
+created: 2023-03-06T11:54:59.000+08:00
+updated: 2024-09-23T15:56:29.339+08:00
 ---
 ## 常规用法
 ```go
