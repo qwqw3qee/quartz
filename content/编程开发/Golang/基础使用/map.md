@@ -3,6 +3,8 @@ dg-publish: true
 tags:
   - golang
   - map
+created: 2023-02-28T20:48:41.000+08:00
+updated: 2024-09-23T15:56:29.348+08:00
 ---
 # map 是什么
 在go语言中，map的底层采用hash表，用变种拉链法来解决hash冲突问题。
