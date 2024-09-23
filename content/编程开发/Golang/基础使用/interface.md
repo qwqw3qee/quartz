@@ -3,6 +3,8 @@ tags:
   - golang
   - interface
 dg-publish: true
+created: 2023-06-05T23:53:40.000+08:00
+updated: 2024-09-23T15:56:29.353+08:00
 ---
 ## 空接口 interface{}
 没有定义任何方法的接口为空接口，空接口可以接收任意数据类型，就是说可以将任意类型的数据赋值给一个空接口，空接口的结构定义位于 `src/runtime/runtime2.go`, 定义如下:​
