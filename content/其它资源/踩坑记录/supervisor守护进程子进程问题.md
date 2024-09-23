@@ -2,6 +2,8 @@
 tags:
   - supervisor
 dg-publish: true
+created: 2024-08-10T14:09:47.000+08:00
+updated: 2024-09-23T15:56:30.362+08:00
 ---
 
 在使用 `supervisor` 守护 `start_syncserver.sh` 脚本运行 Anki syncserver 时，如果执行 `supervisorctl stop` 后发现进程没有正确关闭，这可能与以下几个原因有关：

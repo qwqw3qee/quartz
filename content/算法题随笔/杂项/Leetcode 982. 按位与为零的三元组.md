@@ -6,6 +6,8 @@ tags:
   - 子集优化
   - 常数优化
 dg-publish: true
+created: 2023-03-04T13:43:24.000+08:00
+updated: 2024-09-23T15:56:29.500+08:00
 ---
 题目：[982. 按位与为零的三元组 - 力扣（LeetCode）](https://leetcode.cn/problems/triples-with-bitwise-and-equal-to-zero/)
 

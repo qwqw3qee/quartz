@@ -9,6 +9,8 @@ tags:
   - obsidian
   - 简悦
 dg-publish: true
+created: 2023-03-07T23:35:51.000+08:00
+updated: 2024-09-23T15:56:30.443+08:00
 ---
 > 原文链接：[Obsidian 网页剪藏 - 简悦 + Local REST API](https://t.cj.sina.com.cn/articles/view/1823348853/6cae1875020016gl5)
 

@@ -9,13 +9,15 @@ tags:
   - 目录
 path: content/其它资源
 en-filename: index
+created: 2024-09-17T15:01:09.000+08:00
+updated: 2024-09-23T15:56:30.312+08:00
 ---
 ## 其它资源
 - [[./自建anki服务器教程|自建anki服务器教程]]
 - [[./搭建joplin同步服务器|搭建joplin同步服务器]]
+- [[./word文件代码高亮|word文件代码高亮]]
 - [[./个人使用字体整理|个人使用字体整理]]
 - [[./Word 转 PDF—保留图片高分辨率同时不丢失书签 _ 超链接|Word 转 PDF—保留图片高分辨率同时不丢失书签 _ 超链接]]
-- [[./word文件代码高亮|word文件代码高亮]]
 - [[./mobaxterm资源|mobaxterm资源]]
 
 ### 踩坑记录
@@ -30,7 +32,7 @@ en-filename: index
 ### obsidian资源
 - [[./obsidian资源/将 Obsidian 页面按自定义模板导出为 Word 文档|将 Obsidian 页面按自定义模板导出为 Word 文档]]
 - [[./obsidian资源/【LaTeX 应用】常用数学公式和符号|【LaTeX 应用】常用数学公式和符号]]
-- [[./obsidian资源/obsidian发布工具|obsidian发布工具]]
 - [[./obsidian资源/obsidian资源整理|obsidian资源整理]]
+- [[./obsidian资源/obsidian发布工具|obsidian发布工具]]
 - [[./obsidian资源/Obsidian 网页剪藏 - 简悦   Local REST API|Obsidian 网页剪藏 - 简悦   Local REST API]]
 

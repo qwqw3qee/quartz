@@ -5,6 +5,8 @@ tags:
   - 前缀和
   - 贪心
 dg-publish: true
+created: 2023-03-06T15:28:34.000+08:00
+updated: 2024-09-23T15:56:29.523+08:00
 ---
 ## 题目
 题目：[1653. 使字符串平衡的最少删除次数 - 力扣（LeetCode）](https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/)

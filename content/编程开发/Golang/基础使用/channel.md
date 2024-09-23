@@ -3,6 +3,8 @@ tags:
   - golang
   - channel
 dg-publish: true
+created: 2023-05-28T10:56:19.000+08:00
+updated: 2024-09-23T15:56:29.377+08:00
 ---
 # 总结
 - 关闭一个未初始化的 channel 会产生 panic
