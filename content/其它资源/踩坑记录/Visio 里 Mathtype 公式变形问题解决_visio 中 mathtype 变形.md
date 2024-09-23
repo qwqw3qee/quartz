@@ -7,6 +7,8 @@ banner_icon: 🔖
 tags:
   - 转载
 dg-publish: true
+created: 2023-11-28T19:24:17.000+08:00
+updated: 2024-09-23T15:56:30.358+08:00
 ---
 > 原文链接： [Visio 里 Mathtype 公式变形问题解决_visio 中 mathtype 变形_小林 up 的博客 - CSDN 博客]( https://blog.csdn.net/subtitle_/article/details/130034279)
 
