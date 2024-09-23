@@ -3,6 +3,8 @@ tags:
   - golang
   - defer
 dg-publish: true
+created: 2023-06-10T23:01:38.000+08:00
+updated: 2024-09-23T15:56:29.370+08:00
 ---
 # 基础知识
 延迟的函数的什么时候被调用？
