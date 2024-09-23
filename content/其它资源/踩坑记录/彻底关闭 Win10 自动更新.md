@@ -7,6 +7,8 @@ banner_icon: 🔖
 tags:
   - 转载
 dg-publish: true
+created: 2023-08-31T13:17:33.000+08:00
+updated: 2024-09-23T15:56:30.338+08:00
 ---
 > 原文链接：[彻底关闭 Win10 自动更新]( https://zhuanlan.zhihu.com/p/637474191)
 
