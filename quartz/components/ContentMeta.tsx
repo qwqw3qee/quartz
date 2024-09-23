@@ -33,7 +33,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         if (fileData.dates.created) {
           segments.push(
             <span>
-              ✍︎ 发布于 <TimeMeta value={fileData.dates.created} />
+              ✍︎ 发布于 {formatDate(fileData.dates.created)}
             </span>,
           )
         }
@@ -41,7 +41,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         if (fileData.dates.modified) {
           segments.push(
             <span>
-              🖋️ 更新于 <TimeMeta value={fileData.dates.modified} />
+              🖋️ 更新于 {formatDate(fileData.dates.modified)}
             </span>,
           )
         }
