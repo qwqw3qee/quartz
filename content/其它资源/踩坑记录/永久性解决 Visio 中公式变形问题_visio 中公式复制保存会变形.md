@@ -7,6 +7,8 @@ banner_icon: 🔖
 tags:
   - 转载
 dg-publish: true
+created: 2023-12-04T10:26:02.000+08:00
+updated: 2024-09-23T15:56:30.329+08:00
 ---
 > 原文链接：[永久性解决 Visio 中公式变形问题_visio 中公式复制保存会变形 - CSDN 博客]( https://blog.csdn.net/qq_33700120/article/details/115360914)
 
