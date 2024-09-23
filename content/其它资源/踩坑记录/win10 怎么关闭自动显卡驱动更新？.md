@@ -7,6 +7,8 @@ banner_icon: 🔖
 tags:
   - 转载
 dg-publish: true
+created: 2023-08-31T13:15:48.000+08:00
+updated: 2024-09-23T15:56:30.339+08:00
 ---
 > 原文链接： [win10 怎么关闭自动显卡驱动更新？_百度知道]( https://zhidao.baidu.com/question/626147323581222612.html)
 
