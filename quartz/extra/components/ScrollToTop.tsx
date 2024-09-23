@@ -9,7 +9,6 @@ import { i18n } from "../../i18n"
 const ScrollToTop: QuartzComponent = ({ displayClass, fileData }: QuartzComponentProps) => {
 return (
   <div class={classNames(displayClass, "scroll-to-top")}>
-    <h3>Utilities</h3>
     <ul>
       <li>
         <a href="#">
