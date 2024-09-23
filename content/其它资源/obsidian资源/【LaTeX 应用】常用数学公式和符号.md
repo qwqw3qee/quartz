@@ -9,6 +9,8 @@ tags:
   - obsidian
   - latex
 dg-publish: true
+created: 2023-11-27T15:13:16.000+08:00
+updated: 2024-09-23T15:56:30.425+08:00
 ---
 > 原文链接：[【LaTeX 应用】常用数学公式和符号]( https://zhuanlan.zhihu.com/p/464237097)
 
