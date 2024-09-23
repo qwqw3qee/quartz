@@ -6,6 +6,8 @@ tags:
   - dfs
   - 记忆化搜索
 dg-publish: true
+created: 2023-03-08T17:36:56.000+08:00
+updated: 2024-09-23T15:56:29.522+08:00
 ---
 ## 题目
 题目：[剑指 Offer 47. 礼物的最大价值 - 力扣（LeetCode）](https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/)
