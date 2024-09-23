@@ -37,6 +37,7 @@ export const sharedPageComponents: SharedLayout = {
     links: {
       GitHub: "https://github.com/jackyzha0/quartz",
       "Discord Community": "https://discord.gg/cRFFHYye7t",
+      "Scroll to top ↑": "#",
     },
   }),
 }
@@ -61,7 +62,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
-    ExtraComponent.ScrollToTop(),
   ],
 }
 
