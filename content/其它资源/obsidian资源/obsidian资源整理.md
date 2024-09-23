@@ -3,6 +3,8 @@ tags:
   - obsidian
   - 资源
 dg-publish: true
+created: 2023-03-06T17:49:38.000+08:00
+updated: 2024-09-23T15:56:30.434+08:00
 ---
 ## 教程
 - [Obsidian中文教程 - Obsidian Publish](https://publish.obsidian.md/chinesehelp/)
