@@ -1,6 +1,6 @@
 ---
 created: 2024-09-21T12:10:58.000+08:00
-updated: 2024-09-24T23:59:08.526+08:00
+updated: 2024-09-25T00:04:22.073+08:00
 tags:
   - quartz
   - enveloppe
@@ -32,6 +32,7 @@ Quartz是一款快速、内置电池的静态站点生成器，可将Markdown内
 | 框架预设   | 无                |
 | 构建命令   | npx quartz build |
 | 构建输出目录 | public           |
+
 其它参数保持默认即可。点击**保持并部署**。Cloudflare应该会在大约一分钟内为我们的网站部署一个版本。然后，每次将Quartz更改同步到GitHub时，我们的网站都应该更新。
 
 > [!warning]
@@ -138,6 +139,7 @@ Send linked files：发送被链接的文件，==保持开启==，发布笔记�
 | :----------: | :--: |
 | `/\.\w+\/$/` |      |
 |     ` `      |  -   |
+
 解释：第一个规则是去掉文件末尾的拓展名和斜杠，（替换内容为空）；第二个规则是将路径中的空格替换为`-`。
 注意如果开启了URI编码，则空格应该改为`%20`。
 - Add a command to copy the link of the note (need reloading the plugin to take effect)：增加复制链接命令，==建议开启==，需要重启生效。
