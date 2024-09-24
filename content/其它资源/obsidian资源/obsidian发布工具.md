@@ -47,7 +47,7 @@ updated: 2024-09-24T15:10:52.043+08:00
 > - 演示/说明文档：[Home](https://enveloppe.github.io/)
 
 优点：
-1. 静态博客通用解决方案，支持[[obsidian发布工具#Quartz|Quartz]]，具体操作参考[[Quartz+Enveloppe搭建数字花园|Quartz+Enveloppe搭建数字花园]]。
+1. 静态博客通用解决方案，支持[[obsidian发布工具#Quartz|Quartz]]，具体操作参考Quartz+Enveloppe搭建数字花园。
 2. 支持本地与发布博客分离的工作流，==配置完成后==使用体验类似[[obsidian发布工具#Digital Garden|Digital Garden]]。
 
 不足：
