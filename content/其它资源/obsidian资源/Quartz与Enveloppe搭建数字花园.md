@@ -1,6 +1,6 @@
 ---
 created: 2024-09-21T12:10:58.000+08:00
-updated: 2024-09-25T00:22:45.762+08:00
+updated: 2024-09-25T00:34:23.646+08:00
 tags:
   - quartz
   - enveloppe
@@ -90,15 +90,15 @@ GitHub Workflow：此标题下的选项保持默认即可。
 ### Content
 此部分的详细说明参考[官方文档](https://enveloppe.github.io/Settings/Content)。这些选项不会更改Obsidian Vault中文件的内容，但会更改GitHub中文件的属性。
 #### Links
-把 `links: false` 放在笔记的元数据中，可以防止链接被转换，并保留alt文本(或文件名)
-******- Internals links：开启后，会将内链的路径转换为相对路径。使用dataview插件生成链接的话必须开启此选项。==推荐开启==，但是开启后需要修改Quartz中相关配置，确保笔记之间跳转行为正常。 ^17zyig
+把 `links: false` 放在笔记的元数据中，可以防止链接被转换，并保留alt文本(或文件名)。
+- Internals links：开启后，会将内链的路径转换为相对路径。使用dataview插件生成链接的话必须开启此选项。==推荐开启==，但是开启后需要修改Quartz中相关配置，确保笔记之间跳转行为正常。 ^17zyig
 - Convert internal links pointing to unpublished notes：对于指向的没有发布的文件，是否进行链接转换，关闭后只以链接的形式显示未分享文件的文件名。==保持关闭即可==，开启的话也只会跳转到404页面。如果链接指向的未发布文件也是有计划发布的，对于这种场景建议开启。
 	- Unlink：Convert internal links pointing to unpublished notes选项保持关闭时才能设置，开启后会把未发布的文件链接形式显示的文件名的链接格式去掉，以纯文本的形式显示文件名。
 - `[[Wikilinks]]` to `[MDlinks](links)`：开启后将双链格式的链接转换为传统markdown格式的链接。由于Quartz支持双链格式，==保持关闭即可==。对于不支持双链的网站来说，开启此选项非常有用。
 - Sluglify anchor in markdown links：markdown格式链接内容转换，可以选择将空格和非英文字符转换为兼容的格式。obsidian中不太会用到markdown链接，可以不用管。
 
 #### Main text
-Markdown hard line break：严格换行模式，在标准markdown格式中必须两个换行才能实现分段。obsidian默认是不开启此模式的，开启后自动帮你转换，在使用严格换行模式的网站中兼容性会更好。Quartz可以通过配置关闭严格换行模式，参考[[Quartz与Enveloppe搭建数字花园#Quartz配置修改|这里]]。为了与obsidian中的渲染效果保持统一，==我选择关闭此选项，并且在Quartz配置中关闭严格换行模式==。
+Markdown hard line break：严格换行模式，在标准markdown格式中必须两个换行才能实现分段。obsidian默认是不开启此模式的，开启后自动帮你转换，在使用严格换行模式的网站中兼容性会更好。Quartz可以通过配置关闭严格换行模式，参考[[Quartz与Enveloppe搭建数字花园#Quartz配置修改|下文]]。为了与obsidian中的渲染效果保持统一，==我选择关闭此选项，并且在Quartz配置中关闭严格换行模式==。
 Dataview：装了Dataview插件后才会显示此选项。将Dataview查询转换为markdown。==强烈建议开启==。
 Text replacer：可以添加自定义的文本替换规则，比如通过正则将一些隐私文本替换掉，不过我没有此类需求，没有配置。
 #### Tags
@@ -213,4 +213,4 @@ updated: 2024-09-23T15:56:30.292+08:00
 
 
 [^1]: [使用quartz将Obsidian笔记库部署成静态网站 - 简书](https://www.jianshu.com/p/32849c512de4)
-[^2]: [Plugin and project name change · Enveloppe · Discussion \#349 · GitHub](https://github.com/orgs/Enveloppe/discussions/349)
+[^2]: [Plugin and project name change · Enveloppe · Discussion · GitHub](https://github.com/orgs/Enveloppe/discussions/349)
