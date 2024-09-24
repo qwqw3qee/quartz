@@ -213,4 +213,4 @@ updated: 2024-09-23T15:56:30.292+08:00
 
 
 [^1]: [使用quartz将Obsidian笔记库部署成静态网站 - 简书](https://www.jianshu.com/p/32849c512de4)
-[^2]: [Plugin and project name change · Enveloppe · Discussion #349 · GitHub](https://github.com/orgs/Enveloppe/discussions/349)
+[^2]: [Plugin and project name change · Enveloppe · Discussion \#349 · GitHub](https://github.com/orgs/Enveloppe/discussions/349)
