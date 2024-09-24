@@ -1,6 +1,6 @@
 ---
 created: 2024-09-21T12:10:58.000+08:00
-updated: 2024-09-25T00:04:22.073+08:00
+updated: 2024-09-25T00:22:45.762+08:00
 tags:
   - quartz
   - enveloppe
@@ -79,9 +79,9 @@ GitHub Workflow：此标题下的选项保持默认即可。
 此部分的详细说明参考[官方文档](https://enveloppe.github.io/Settings/Upload)。
 - File tree in repository：推荐选==Obsidian Path==，保持本地笔记路径结构。如果想全部手动指定路径，可以选择 property key。
 - Root folder：远程存储库中存放笔记的根目录，这里填==content==。
-- Set the key where to get the value of the filename：可以通过设置自定义元数据指定上传后文件的名字，默认使用title为键。==可开可不开==。 ^fbdaoy
-- Apply edit on the folder path or the filename (automatically)：通用的路径和文件名替换规则，有的时候本地目录结构较复杂，而分享到远程存储库时没必要保持原有结构，可以使用此功能将复杂的路径映射到简单的路径上。注意此处一般是设置通用替换规则的，如果仅要特别指定某个文件的路径，可以使用其它方式实现，参考[[Quartz+Enveloppe搭建数字花园#为特定文件设置上传位置|下文]]。==可根据实际需求添加规则==。
-- Folder note：可以为目录指定笔记。在Quartz中，每个目录下的`index.md`文件会被当作目录笔记。开启该选项后，在上传笔记时把与目录同名的笔记自动更名为`index.md`（也可以指定修改后的文件名）。==可开启，也可以通过其它方式手动指定==，参考[[Quartz+Enveloppe搭建数字花园#为特定文件设置上传位置|下文]]。
+- Set the key where to get the value of the filename：可以通过设置自定义元数据指定上传后文件的名字，默认使用title为键。==可开可不开==。 ^unrtxk
+- Apply edit on the folder path or the filename (automatically)：通用的路径和文件名替换规则，有的时候本地目录结构较复杂，而分享到远程存储库时没必要保持原有结构，可以使用此功能将复杂的路径映射到简单的路径上。注意此处一般是设置通用替换规则的，如果仅要特别指定某个文件的路径，可以使用其它方式实现，参考[[Quartz与Enveloppe搭建数字花园#为特定文件设置上传位置|下文]]。==可根据实际需求添加规则==。
+- Folder note：可以为目录指定笔记。在Quartz中，每个目录下的`index.md`文件会被当作目录笔记。开启该选项后，在上传笔记时把与目录同名的笔记自动更名为`index.md`（也可以指定修改后的文件名）。==可开启，也可以通过其它方式手动指定==，参考[[Quartz与Enveloppe搭建数字花园#为特定文件设置上传位置|下文]]。
 	- Automatically add the "title" key with the file name：开启Folder note选项后，由于上传的文件名被改为`index.md`，笔记的默认标题也会变为index，开启此选项可以将原本的文件名添加到元数据中，让笔记在网站上可以正确显示。
 - Auto clean up：自动从远程存储库中删除未发布的笔记，在笔记改名或者取消分享后很方便。如果远程存储库中的所有笔记只通过本地的Enveloppe插件进行分享，**没有其它途径上传的笔记时**，可以（推荐）==开启==。
 - Excluded files and folder：排除的文件或文件夹，在清理时不会删除远程存储库中对应的目录或文件。我暂时没有特别排除的目录或文件，所以没填。
@@ -91,14 +91,14 @@ GitHub Workflow：此标题下的选项保持默认即可。
 此部分的详细说明参考[官方文档](https://enveloppe.github.io/Settings/Content)。这些选项不会更改Obsidian Vault中文件的内容，但会更改GitHub中文件的属性。
 #### Links
 把 `links: false` 放在笔记的元数据中，可以防止链接被转换，并保留alt文本(或文件名)
-- Internals links：开启后，会将内链的路径转换为相对路径。使用dataview插件生成链接的话必须开启此选项。==推荐开启==，但是开启后需要修改Quartz中相关配置，确保笔记之间跳转行为正常。 ^4r5u9t
+******- Internals links：开启后，会将内链的路径转换为相对路径。使用dataview插件生成链接的话必须开启此选项。==推荐开启==，但是开启后需要修改Quartz中相关配置，确保笔记之间跳转行为正常。 ^17zyig
 - Convert internal links pointing to unpublished notes：对于指向的没有发布的文件，是否进行链接转换，关闭后只以链接的形式显示未分享文件的文件名。==保持关闭即可==，开启的话也只会跳转到404页面。如果链接指向的未发布文件也是有计划发布的，对于这种场景建议开启。
 	- Unlink：Convert internal links pointing to unpublished notes选项保持关闭时才能设置，开启后会把未发布的文件链接形式显示的文件名的链接格式去掉，以纯文本的形式显示文件名。
 - `[[Wikilinks]]` to `[MDlinks](links)`：开启后将双链格式的链接转换为传统markdown格式的链接。由于Quartz支持双链格式，==保持关闭即可==。对于不支持双链的网站来说，开启此选项非常有用。
 - Sluglify anchor in markdown links：markdown格式链接内容转换，可以选择将空格和非英文字符转换为兼容的格式。obsidian中不太会用到markdown链接，可以不用管。
 
 #### Main text
-Markdown hard line break：严格换行模式，在标准markdown格式中必须两个换行才能实现分段。obsidian默认是不开启此模式的，开启后自动帮你转换，在使用严格换行模式的网站中兼容性会更好。Quartz可以通过配置关闭严格换行模式，参考[[Quartz+Enveloppe搭建数字花园#Quartz配置修改|这里]]。为了与obsidian中的渲染效果保持统一，==我选择关闭此选项，并且在Quartz配置中关闭严格换行模式==。
+Markdown hard line break：严格换行模式，在标准markdown格式中必须两个换行才能实现分段。obsidian默认是不开启此模式的，开启后自动帮你转换，在使用严格换行模式的网站中兼容性会更好。Quartz可以通过配置关闭严格换行模式，参考[[Quartz与Enveloppe搭建数字花园#Quartz配置修改|这里]]。为了与obsidian中的渲染效果保持统一，==我选择关闭此选项，并且在Quartz配置中关闭严格换行模式==。
 Dataview：装了Dataview插件后才会显示此选项。将Dataview查询转换为markdown。==强烈建议开启==。
 Text replacer：可以添加自定义的文本替换规则，比如通过正则将一些隐私文本替换掉，不过我没有此类需求，没有配置。
 #### Tags
@@ -179,17 +179,17 @@ configuration: {
     baseUrl: "xxx.com", //你的域名
 ```
 #### 修改链接处理
-此插件解析链接并处理它们以指向正确的位置，详细说明参考[官方文档](https://quartz.jzhao.xyz/plugins/CrawlLinks)。根据之前在Enveloppe中的[[Quartz+Enveloppe搭建数字花园#^4r5u9t|"Internals links"]]设置项，这里应改成相对路径，不然在不同文件夹下点击笔记跳转时会出现问题。此外，可以开启懒加载选项，优化浏览体验。
+此插件解析链接并处理它们以指向正确的位置，详细说明参考[官方文档](https://quartz.jzhao.xyz/plugins/CrawlLinks)。根据之前在Enveloppe中的"[[Quartz与Enveloppe搭建数字花园#^17zyig|Internals links]]"设置项，这里应改成相对路径，不然在不同文件夹下点击笔记跳转时会出现问题。此外，可以开启懒加载选项，优化浏览体验。
 ```ts  title=quartz.config.ts
       Plugin.CrawlLinks({ markdownLinkResolution: "relative", lazyLoad: true }),
 ```
 
 > [!tip]
-> `markdownLinkResolution`这个设置项的参数，安装Quartz官方推荐的工作流，即使用Obsidian打开`content`目录作为Obsidian的主目录，其三个参数对应了Obsidian中设置-文件与链接-内部链接类型中的三个选项，此工作流下一定要保证Obsidian的设置与Quartz的设置统一，以避免预料之外的跳转问题。
+> `markdownLinkResolution`这个设置项的参数，安装Quartz官方推荐的工作流，即使用Obsidian打开`content`目录作为Obsidian的主目录，其三个参数对应了Obsidian中**设置**-**文件与链接**-**内部链接类型**中的三个选项，此工作流下一定要保证Obsidian的设置与Quartz的设置统一，以避免预料之外的跳转问题。
 > ![[../../Z-Others/assets/QQ_1727190894410.png|QQ_1727190894410]]
 
 ### 上传首页
-做完上述操作，便可以在Obsidian中撰写笔记并传送到Quartz上了。先不着急把本地的笔记都上传了，首先解决一下首页的问题。在任意目录下新建如下文档，命名任意。其中`en-filename`这个属性是我在Enveloppe中[[Quartz+Enveloppe搭建数字花园#^fbdaoy|"Set the key where to get the value of the filename"]]一项设置的键名，用于修改上传后文件的文件名。`created`和`updated`为我用Linter插件生成的文件创建时间和修改时间，用于在网站中显示（需要做一定的修改，普通的话只设置一个`Date`键即可）。这样上传并触发自动部署后，网站首页便可正常访问了。
+做完上述操作，便可以在Obsidian中撰写笔记并传送到Quartz上了。先不着急把本地的笔记都上传了，首先解决一下首页的问题。在任意目录下新建如下文档，命名任意。其中`en-filename`这个属性是我在Enveloppe中"[[Quartz与Enveloppe搭建数字花园#^unrtxk|Set the key where to get the value of the filename]]"一项设置的键名，用于修改上传后文件的文件名。`created`和`updated`为我用Linter插件生成的文件创建时间和修改时间，用于在网站中显示（需要做一定的修改，普通的话只设置一个`Date`键即可）。这样上传并触发自动部署后，网站首页便可正常访问了。
 ```markdown title=首页.md
 ---
 share: true
