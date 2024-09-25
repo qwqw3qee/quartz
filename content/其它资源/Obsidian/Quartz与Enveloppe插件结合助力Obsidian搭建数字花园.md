@@ -1,6 +1,6 @@
 ---
 created: 2024-09-21T12:10:58.000+08:00
-updated: 2024-09-25T01:33:24.687+08:00
+updated: 2024-09-25T11:25:56.587+08:00
 tags:
   - quartz
   - enveloppe
@@ -9,15 +9,15 @@ tags:
   - 教程
 dg-publish: true
 ---
-## Quartz数字花园搭建
+## Quartz部署
+Quartz是一款快速静态站点生成器，可将Markdown内容转换为功能齐全的网站。Quartz 4现在使用基于节点的静态站点生成过程，这应该会带来更有用的错误消息和更流畅的用户体验。Quartz 4使用名为JSX的JavaScript语法扩展，它允许您在JavaScript中编写看起来像HTML的布局代码，这更容易理解和维护。Quartz最大的特点是与Obsidian结合良好，原生支持Obsidian的双链特性，在Obsidian中编辑的笔记几乎可以无改动直接发布到Quartz中。
+关于Quartz的搭建，我在网上看到的中文文章不多[^1]，好在官方文档内容较为详细，且提供了在各种静态网站托管服务商建立网站的详细步骤，这里就根据官方文档和我本人体验，写下简单的搭建步骤。不过本文使用该项目的工作流与官方文档设定的略有区别，因此搭建好后在使用上面流程略有不同。
 ### Quartz相关信息
 数字花园对比：[[./obsidian发布工具|obsidian发布工具]]
 Quartz相关信息：
 - 项目地址：[GitHub - jackyzha0/quartz: 🌱 a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites](https://github.com/jackyzha0/quartz)
 - 官方文档：[Welcome to Quartz 4](https://quartz.jzhao.xyz/)
 
-Quartz是一款快速、内置电池的静态站点生成器，可将Markdown内容转换为功能齐全的网站。Quartz 4现在使用基于节点的静态站点生成过程，这应该会带来更有用的错误消息和更流畅的用户体验。Quartz 4使用名为JSX的JavaScript语法扩展，它允许您在JavaScript中编写看起来像HTML的布局代码，这更容易理解和维护。
-关于Quartz的搭建，我在网上看到的中文文章不多[^1]，好在官方文档内容较为详细，且提供了在各种静态网站托管服务商建立网站的详细步骤，这里就根据官方文档和我本人体验，写下简单的搭建步骤。不过本文使用该项目的工作流与官方文档设定的略有区别，因此搭建好后在使用上面流程略有不同。
 ### 创建项目分支
 在Github中fork[原项目](https://github.com/jackyzha0/quartz)，在自己的Github中创建原项目的分支。（也可以使用模板生成新的存储库，fork可以直接在github上同步原项目的更新）。
 ### 部署上线
@@ -55,7 +55,7 @@ Quartz是一款快速、内置电池的静态站点生成器，可将Markdown内
 - 项目地址：[GitHub - Enveloppe/obsidian-enveloppe: Enveloppe helps you to publish your notes on a GitHub repository from your Obsidian Vault, for free!](https://github.com/Enveloppe/obsidian-enveloppe)
 - 官方文档：[Home](https://enveloppe.github.io/)
 
-Enveloppe原名Github Publisher，貌似是原作者为了避免被误解为是由Obsidian或者Github团队制作的[^2]，不过只是改了下名字，功能没有发生变化。该插件的主要用途是将本地的笔记进行处理，发送到静态网站托管在GitHub上的存储库中，实现对分享内容的“投递”~~（这么看新名字确实更形象）~~。配合Github Action，在存储库内容发送变化时自动触发编译操作，生成对应的静态页面，从而实现一键分享笔记的效果。不过Envelope只负责将笔记进行一定处理后上传到Github中的指定目录下，不关心用户以什么样的方式组织网站，网站的源码及所支持的功能由用户完全把控。理论上，只要能把笔记能转换成纯markdown文件，就可以通过Enveloppe将笔记一键发送到任意一种支持markdown语法的静态网站中去。
+Enveloppe是一款Obsidian的第三方插件，原名Github Publisher，貌似是原作者为了避免被误解为是由Obsidian或者Github团队制作的[^2]，不过只是改了下名字，功能没有发生变化。该插件的主要用途是将本地的笔记进行处理，发送到静态网站托管在GitHub上的存储库中，实现对分享内容的“投递”~~（这么看新名字确实更形象）~~。配合Github Action，在存储库内容发送变化时自动触发编译操作，生成对应的静态页面，从而实现一键分享笔记的效果。不过Envelope只负责将笔记进行一定处理后上传到Github中的指定目录下，不关心用户以什么样的方式组织网站，网站的源码及所支持的功能由用户完全把控。理论上，只要能把笔记能转换成纯markdown文件，就可以通过Enveloppe将笔记一键发送到任意一种支持markdown语法的静态网站中去。
 前文我们已经搭建了Quartz数字花园，下面就通过对Enveloppe进行配置，实现将笔记完美发布到Quartz中去。
 
 > [!warning]
@@ -80,8 +80,8 @@ GitHub Workflow：此标题下的选项保持默认即可。
 - File tree in repository：推荐选==Obsidian Path==，保持本地笔记路径结构。如果想全部手动指定路径，可以选择 property key。
 - Root folder：远程存储库中存放笔记的根目录，这里填==content==。
 - Set the key where to get the value of the filename：可以通过设置自定义元数据指定上传后文件的名字，默认使用title为键。==可开可不开==。 ^unrtxk
-- Apply edit on the folder path or the filename (automatically)：通用的路径和文件名替换规则，有的时候本地目录结构较复杂，而分享到远程存储库时没必要保持原有结构，可以使用此功能将复杂的路径映射到简单的路径上。注意此处一般是设置通用替换规则的，如果仅要特别指定某个文件的路径，可以使用其它方式实现，参考[[Quartz与Enveloppe搭建数字花园#为特定文件设置上传位置|下文]]。==可根据实际需求添加规则==。
-- Folder note：可以为目录指定笔记。在Quartz中，每个目录下的`index.md`文件会被当作目录笔记。开启该选项后，在上传笔记时把与目录同名的笔记自动更名为`index.md`（也可以指定修改后的文件名）。==可开启，也可以通过其它方式手动指定==，参考[[Quartz与Enveloppe搭建数字花园#为特定文件设置上传位置|下文]]。
+- Apply edit on the folder path or the filename (automatically)：通用的路径和文件名替换规则，有的时候本地目录结构较复杂，而分享到远程存储库时没必要保持原有结构，可以使用此功能将复杂的路径映射到简单的路径上。注意此处一般是设置通用替换规则的，如果仅要特别指定某个文件的路径，可以使用其它方式实现，参考[[Quartz与Enveloppe插件结合助力Obsidian搭建数字花园#为特定文件设置上传位置|下文]]。==可根据实际需求添加规则==。
+- Folder note：可以为目录指定笔记。在Quartz中，每个目录下的`index.md`文件会被当作目录笔记。开启该选项后，在上传笔记时把与目录同名的笔记自动更名为`index.md`（也可以指定修改后的文件名）。==可开启，也可以通过其它方式手动指定==，参考[[Quartz与Enveloppe插件结合助力Obsidian搭建数字花园#为特定文件设置上传位置|下文]]。
 	- Automatically add the "title" key with the file name：开启Folder note选项后，由于上传的文件名被改为`index.md`，笔记的默认标题也会变为index，开启此选项可以将原本的文件名添加到元数据中，让笔记在网站上可以正确显示。
 - Auto clean up：自动从远程存储库中删除未发布的笔记，在笔记改名或者取消分享后很方便。如果远程存储库中的所有笔记只通过本地的Enveloppe插件进行分享，**没有其它途径上传的笔记时**，可以（推荐）==开启==。
 - Excluded files and folder：排除的文件或文件夹，在清理时不会删除远程存储库中对应的目录或文件。我暂时没有特别排除的目录或文件，所以没填。
@@ -98,7 +98,7 @@ GitHub Workflow：此标题下的选项保持默认即可。
 - Sluglify anchor in markdown links：markdown格式链接内容转换，可以选择将空格和非英文字符转换为兼容的格式。obsidian中不太会用到markdown链接，可以不用管。
 
 #### Main text
-Markdown hard line break：严格换行模式，在标准markdown格式中必须两个换行才能实现分段。obsidian默认是不开启此模式的，开启后自动帮你转换，在使用严格换行模式的网站中兼容性会更好。Quartz可以通过配置关闭严格换行模式，参考[[Quartz与Enveloppe搭建数字花园#关闭严格换行模式|下文]]。为了与obsidian中的渲染效果保持统一，==我选择关闭此选项，并且在Quartz配置中关闭严格换行模式==。
+Markdown hard line break：严格换行模式，在标准markdown格式中必须两个换行才能实现分段。obsidian默认是不开启此模式的，开启后自动帮你转换，在使用严格换行模式的网站中兼容性会更好。Quartz可以通过配置关闭严格换行模式，参考[[Quartz与Enveloppe插件结合助力Obsidian搭建数字花园#关闭严格换行模式|下文]]。为了与obsidian中的渲染效果保持统一，==我选择关闭此选项，并且在Quartz配置中关闭严格换行模式==。
 Dataview：装了Dataview插件后才会显示此选项。将Dataview查询转换为markdown。==强烈建议开启==。
 Text replacer：可以添加自定义的文本替换规则，比如通过正则将一些隐私文本替换掉，不过我没有此类需求，没有配置。
 #### Tags
@@ -178,7 +178,7 @@ configuration: {
     baseUrl: "xxx.com", //你的域名
 ```
 #### 修改链接处理
-此插件解析链接并处理它们以指向正确的位置，详细说明参考[官方文档](https://quartz.jzhao.xyz/plugins/CrawlLinks)。根据之前在Enveloppe中的"[[Quartz与Enveloppe搭建数字花园#^ngx1a9|Internals links]]"设置项，这里应改成相对路径，不然在不同文件夹下点击笔记跳转时会出现问题。此外，可以开启懒加载选项，优化浏览体验。
+此插件解析链接并处理它们以指向正确的位置，详细说明参考[官方文档](https://quartz.jzhao.xyz/plugins/CrawlLinks)。根据之前在Enveloppe中的"[[Quartz与Enveloppe插件结合助力Obsidian搭建数字花园#^ngx1a9|Internals links]]"设置项，这里应改成相对路径，不然在不同文件夹下点击笔记跳转时会出现问题。此外，可以开启懒加载选项，优化浏览体验。
 ```ts  title="quartz.config.ts"
       Plugin.CrawlLinks({ markdownLinkResolution: "relative", lazyLoad: true }),
 ```
@@ -201,7 +201,7 @@ configuration: {
     // ...
 ```
 ### 上传首页
-做完上述操作，便可以在Obsidian中撰写笔记并传送到Quartz上了。先不着急把本地的笔记都上传了，首先解决一下首页的问题。在任意目录下新建如下文档，命名任意。其中`en-filename`这个属性是我在Enveloppe中"[[Quartz与Enveloppe搭建数字花园#^unrtxk|Set the key where to get the value of the filename]]"一项设置的键名，用于修改上传后文件的文件名。`created`和`updated`为我用Linter插件生成的文件创建时间和修改时间，用于在网站中显示（需要做一定的修改，普通的话只设置一个`Date`键即可）。这样上传并触发自动部署后，网站首页便可正常访问了。
+做完上述操作，便可以在Obsidian中撰写笔记并传送到Quartz上了。先不着急把本地的笔记都上传了，首先解决一下首页的问题。在任意目录下新建如下文档，命名任意。其中`en-filename`这个属性是我在Enveloppe中"[[Quartz与Enveloppe插件结合助力Obsidian搭建数字花园#^unrtxk|Set the key where to get the value of the filename]]"一项设置的键名，用于修改上传后文件的文件名。`created`和`updated`为我用Linter插件生成的文件创建时间和修改时间，用于在网站中显示（需要做一定的修改，普通的话只设置一个`Date`键即可）。这样上传并触发自动部署后，网站首页便可正常访问了。
 ```markdown title="首页.md"
 ---
 share: true
