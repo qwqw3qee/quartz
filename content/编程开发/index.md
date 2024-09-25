@@ -15,8 +15,8 @@ updated: 2024-09-23T15:56:30.297+08:00
 ## Golang
 ### 基础使用
 - [[./Golang/基础使用/二维数组|二维数组]]
-- [[./Golang/基础使用/string|string]]
 - [[./Golang/基础使用/sync.map|sync.map]]
+- [[./Golang/基础使用/string|string]]
 - [[./Golang/基础使用/map|map]]
 - [[./Golang/基础使用/interface|interface]]
 - [[./Golang/基础使用/go语言异常捕获|go语言异常捕获]]
@@ -24,14 +24,14 @@ updated: 2024-09-23T15:56:30.297+08:00
 - [[./Golang/基础使用/go基础简明笔记|go基础简明笔记]]
 - [[./Golang/基础使用/defer执行顺序问题|defer执行顺序问题]]
 - [[./Golang/基础使用/defer|defer]]
-- [[./Golang/基础使用/channel|channel]]
 - [[./Golang/基础使用/context|context]]
+- [[./Golang/基础使用/channel|channel]]
 
 ### 算法调用与实现
 - [[./Golang/算法调用与实现/栈|栈]]
 - [[./Golang/算法调用与实现/并查集|并查集]]
-- [[./Golang/算法调用与实现/二分查找|二分查找]]
 - [[./Golang/算法调用与实现/优先队列（小根堆）|优先队列（小根堆）]]
+- [[./Golang/算法调用与实现/二分查找|二分查找]]
 - [[./Golang/算法调用与实现/sort|sort]]
 
 ## Vue
