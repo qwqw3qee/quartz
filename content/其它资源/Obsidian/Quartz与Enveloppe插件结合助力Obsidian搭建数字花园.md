@@ -1,6 +1,6 @@
 ---
 created: 2024-09-21T12:10:58.000+08:00
-updated: 2024-09-25T15:56:26.093+08:00
+updated: 2024-09-25T16:40:09.794+08:00
 tags:
   - quartz
   - enveloppe
@@ -163,7 +163,7 @@ Send linked files：发送被链接的文件，==保持开启==，发布笔记�
 除了指定上传路径，还可以指定多种属性，用于控制上传多个远程存储库等操作，具体可参考[官方文档](https://enveloppe.github.io/Settings/Per-files-settings)。
 ### Quartz配置修改
 在Quartz的存储库的根目录，`quartz.config.ts`文件负责网站的整体和插件的配置，`quartz.layout.ts`负责外观布局相关的配置，详细的说明参考[官方文档](https://quartz.jzhao.xyz/configuration)。官方文档写的确实不错，建议想要高度自定义的同学多翻翻官方文档。
-本人网站修改记录：[[./Quartz个人配置修改记录|Quartz个人配置修改记录]]。
+本人网站配置修改记录：[[./Quartz个人配置修改记录|Quartz个人配置修改记录]]。
 #### 修改网站名称
 在`quartz.config.ts`中找到以下内容进行修改。
 ```ts title="quartz.config.ts"
