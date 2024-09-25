@@ -1,6 +1,6 @@
 ---
 created: 2024-09-21T12:10:58.000+08:00
-updated: 2024-09-25T11:25:56.587+08:00
+updated: 2024-09-25T13:37:01.888+08:00
 tags:
   - quartz
   - enveloppe
@@ -38,7 +38,7 @@ Quartz相关信息：
 > [!warning]
 > - Cloudflare Pages默认执行浅层克隆，因此如果您依赖 `git` 作为时间戳，建议您在构建命令的开头添加 `git fetch --unshallow &&` （例如 `git fetch --unshallow && npx quartz build` ）。
 > - 这里的时间戳主要用于表示笔记的**发布/修改**时间。在==不修改构建命令==并且==笔记中不含指示笔记日期的元数据==时，由于构建过程中拉取的文件的时间戳会被置为构建时的时间，这个时间会被拿来作为笔记的发布日期，导致文章的发布时间变为最后一次部署的时间，违背了使用者的本意。因此在不使用元数据表示发布日期的情况下，可以通过这个操作临时回避这个问题。
-> - 可以通过指定额外的元数据来表示笔记的发布时间等不同的属性，具体参考[官方文档](https://developers.cloudflare.com/pages/platform/custom-domains/)
+> - 可以通过指定额外的元数据来表示笔记的发布时间等不同的属性，具体参考[官方文档](https://developers.cloudflare.com/pages/platform/custom-domains/)。
 
 
 可选的，如有有自己的域名，可以为部署的网站绑定自己的域名，在项目页面下**自定义域**标签中进行添加，具体操作请查看[Cloudflare的文档](https://developers.cloudflare.com/pages/platform/custom-domains/)。
@@ -98,9 +98,9 @@ GitHub Workflow：此标题下的选项保持默认即可。
 - Sluglify anchor in markdown links：markdown格式链接内容转换，可以选择将空格和非英文字符转换为兼容的格式。obsidian中不太会用到markdown链接，可以不用管。
 
 #### Main text
-Markdown hard line break：严格换行模式，在标准markdown格式中必须两个换行才能实现分段。obsidian默认是不开启此模式的，开启后自动帮你转换，在使用严格换行模式的网站中兼容性会更好。Quartz可以通过配置关闭严格换行模式，参考[[Quartz与Enveloppe插件结合助力Obsidian搭建数字花园#关闭严格换行模式|下文]]。为了与obsidian中的渲染效果保持统一，==我选择关闭此选项，并且在Quartz配置中关闭严格换行模式==。
-Dataview：装了Dataview插件后才会显示此选项。将Dataview查询转换为markdown。==强烈建议开启==。
-Text replacer：可以添加自定义的文本替换规则，比如通过正则将一些隐私文本替换掉，不过我没有此类需求，没有配置。
+- Markdown hard line break：严格换行模式，在标准markdown格式中必须两个换行才能实现分段。obsidian默认是不开启此模式的，开启后自动帮你转换，在使用严格换行模式的网站中兼容性会更好。Quartz可以通过配置关闭严格换行模式，参考[[Quartz与Enveloppe插件结合助力Obsidian搭建数字花园#关闭严格换行模式|下文]]。为了与obsidian中的渲染效果保持统一，==我选择关闭此选项，并且在Quartz配置中关闭严格换行模式==。
+- Dataview：装了Dataview插件后才会显示此选项。将Dataview查询转换为markdown。==强烈建议开启==。
+- Text replacer：可以添加自定义的文本替换规则，比如通过正则将一些隐私文本替换掉，不过我没有此类需求，没有配置。
 #### Tags
 Quartz对Obsidian的tag支持较好，此部分内容保持默认即可。
 ### Attachment & embeds
