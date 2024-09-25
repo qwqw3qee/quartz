@@ -1,6 +1,6 @@
 ---
 created: 2024-09-23T11:35:56.000+08:00
-updated: 2024-09-25T16:29:41.724+08:00
+updated: 2024-09-26T01:46:53.714+08:00
 tags:
   - quartz
   - obsidian
@@ -71,6 +71,33 @@ img {
 	padding: 2px;
 }
 ```
+### 添加最近笔记组件
+此组件为官方组件，详细说明参考[官方文档](https://quartz.jzhao.xyz/features/recent-notes)。在合适的位置添加如下代码即可。如果想桌面端与移动端分别处理，可在外面套上`Component.DesktopOnly()`或`Component.MobileOnly()`。
+```ts  title="quartz.config.ts"
+Component.RecentNotes({
+  title: "最近更新",
+  showTags: false,
+  limit: 4,
+  filter: (f) => {
+    if (f.filePath?.endsWith("index.md")) {
+      return false
+    }
+    return true
+  },
+  sort: (f1, f2) => {
+    if (f1.dates && f2.dates) {
+      if (Math.abs(f2.dates.modified.getDay() - f1.dates.modified.getDay())<=3) {
+        return f2.dates.created.getTime() - f1.dates.created.getTime()
+      }
+      return f2.dates.modified.getTime() - f1.dates.modified.getTime()
+    } else if (f1.dates && !f2.dates) {
+      return -1
+    }
+    return 1
+  }
+})
+```
+这里的配置是关闭了tag显示，限制笔记数量为4条，过滤规则为排除掉以`index.md`结尾的文件（即首页或文件夹主页），并编写了一条自定义排序规则（综合考虑了修改时间和创建时间，瞎写的）。
 ### 启用Giscus评论系统
 #### 预先准备
 根据[giscus](https://giscus.app/zh-CN)说明，设置Github并生成配置信息。
@@ -238,8 +265,31 @@ const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) =>
 主要变动如下：
 1、增加修改时间和修改记录显示
 2、增加图标表示
-修改`./quartz/components/ContentMeta.tsx`：
-```tsx title="./quartz/components/ContentMeta.tsx" hl:4-20,29-32,36-43 {4-20,29-32,36-43}
+
+修改`./quartz/plugins/transformers/lastmod.ts`，增加对属性`created`的解析。
+```ts title="lastmod.ts" hl:4 {4}
+			// ...
+              } else if (source === "frontmatter" && file.data.frontmatter) {
+                // 以下是新增代码
+                created ||= file.data.frontmatter.created as MaybeDate
+                // 以上是新增代码
+				created ||= file.data.frontmatter.date as MaybeDate
+          // ...
+```
+修改`./quartz/components/Date.tsx`，给日期格式化函数增加时间显示。（也可以不修改，在`ContentMeta.tsx`中自行编写格式化函数）：
+```tsx title="Date.tsx" hl:6-7 {6-7}
+  return d.toLocaleDateString(locale, {
+    year: "numeric",
+    month: "short",
+    day: "2-digit",
+    // 以下是新增代码
+    hour: "2-digit",
+    minute: "2-digit",
+    // 以上是新增代码
+  })
+```
+修改`./quartz/components/ContentMeta.tsx`，将时间显示分为创建时间和修改时间，并在后面添加修改历史链接，这里直接嵌入了svg格式的[lucide](https://lucide.dev/)图标：
+```tsx title="ContentMeta.tsx" hl:4-20,29-32,36-43 {4-20,29-32,36-43}
   if (text) {
     const segments: (string | JSX.Element)[] = []
 	//以下是修改代码
@@ -280,7 +330,7 @@ const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) =>
         href={`https://github.githistory.xyz/qwqw3qee/quartz/commits/v4/${fileData.filePath}`}
         target="_blank"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" style="position:relative; top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-history"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg> 修改记录
+        <svg xmlns="http://www.w3.org/2000/svg" style="position:relative; top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-history"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg> 修改历史
       </a>,
     )
     // 以上是修改代码
@@ -294,7 +344,6 @@ const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) =>
   } else {
     return null
   }
-
 ```
 
 
