@@ -1,6 +1,6 @@
 ---
 created: 2024-09-21T12:10:58.000+08:00
-updated: 2024-09-25T16:40:09.794+08:00
+updated: 2024-09-26T01:19:31.605+08:00
 tags:
   - quartz
   - enveloppe
@@ -216,14 +216,36 @@ updated: 2024-09-23T15:56:30.292+08:00
 
 ```
 ## 踩坑记录
+### 关闭自动部署预览分支
 使用Enveloppe传送多篇笔记时，你会发现该插件会在你的存储库中新建一条分支，然后上传的每一个笔记文件都会产生一条commit记录，这在使用自动部署服务时，默认设置下网站服务商会对每一次提交都生成一次构建行为，严重浪费资源，且如果使用Vercel的话，大量的构建行为会很快达到免费用户的构建上限，而且对这个分支的构建意义不大，最终还是要看主线分支上的构建，因此最好关闭非生产分支上的自动构建行为。
-### Cloudflare设置
+#### Cloudflare设置
 打开程序面板，找到**设置**-**分支控制**，点击右侧<svg style="width:16px" class="c_ey c_ci c_da c_ez" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5.685 11.864l.254-.136 7.105-7.085v-.707l-2.48-2.48h-.707L2.753 8.54l-.138.258-.605 3.105.59.586 3.085-.625zM3.567 9.14l6.643-6.625 1.773 1.773-6.644 6.625-2.205.447.433-2.22zM14 13.5H2v1h12v-1z"></path></svg>图标，在**预览分支**标题下，选择**无（禁止自动分支部署）**，然后点击**部署**。
 ![[../../Z-Others/assets/QQ_1727192319090.png|QQ_1727192319090]]
-### Vercel设置
+#### Vercel设置
 如果使用Vercel部署网站的话，打开网站的项目，在**Setting**-**Git**标签下，向下滚动至最下方，在**Ignored Build Step**标题下的**Project Settings**中，选择**Only build production**选项，然后点击**Save**。
 ![[../../Z-Others/assets/QQ_1727192556337.png|QQ_1727192556337]]
 
+### 时区修改
+Quartz中显示的时间会自动转换为部署环境所处的时区，使用网站托管服务商的服务时默认为0时区。解决方案[^3]是在设置面板中添加环境变量`TZ = Asia/Shanghai`。
+#### Cloudflare
+进入 Cloudflare ，Workers 和 Pages ，进入该站点， **设置** ，**选择环境**为**制作**，找到**变量和机密**，点击**添加**，**变量名称**填`TZ`，**值**填`Asia/Shanghai`。之后重新部署即可。
+![[../../Z-Others/assets/QQ_1727284299453.png|QQ_1727284299453]]
+#### Vercel
+Vercel中，正常添加环境变量的方法类似，也是在相关设置项中添加键值对即可，但是`TZ`为Vercel的保留变量，无法直接添加，需要在配置文件中添加。
+解决方法是在根目录新建`vercel.json`（根据Quartz的[官方文档](https://quartz.jzhao.xyz/hosting#vercel)进行部署时已经新建过了），添加环境变量配置后完整内容如下：
+```json title="vercel.json" hl:3-8 {3-8}
+{
+    "cleanUrls": true,
+    "version": 2,
+    "build": {
+        "env": {
+          "TZ": "Asia/Shanghai"
+        }
+    }
+}
+```
+之后重新部署即可。
 
 [^1]: [使用quartz将Obsidian笔记库部署成静态网站 - 简书](https://www.jianshu.com/p/32849c512de4)
 [^2]: [Plugin and project name change · Enveloppe · Discussion · GitHub](https://github.com/orgs/Enveloppe/discussions/349)
+[^3]: [解决 Hexo 博客部署在 Cloudflare 和 Vercel 上时区错误问题 | 天澄拾光](https://ihave.news/post/20240824083058.html)
