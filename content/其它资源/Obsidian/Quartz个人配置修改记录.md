@@ -1,6 +1,6 @@
 ---
 created: 2024-09-23T11:35:56.000+08:00
-updated: 2024-09-25T15:57:23.137+08:00
+updated: 2024-09-25T16:05:30.989+08:00
 tags:
   - quartz
   - obsidian
@@ -141,11 +141,7 @@ img {
 ```
 主要修改如下，代码详见本站仓库：
 1. 修改导包路径问题。
-2. 调整图标文件夹链接的图标为<svg width="20" height="12" xmlns="http://www.w3.org/2000/svg" class="lucide lucide-navigation" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none">
-
-                        <polygon transform="rotate(25.5735 7.26917 4.48399)" stroke="null" id="svg_1" points="0.26425468921661377,4.115314036607742 14.274086892604828,-2.5209226310253143 7.637851655483246,11.488909751176834 6.1631311774253845,5.590032607316971 0.26425468921661377,4.115314036607742 " />
-
-                      </svg>。
+2. 调整图标文件夹链接的图标为<svg width="20" height="12" xmlns="http://www.w3.org/2000/svg" class="lucide lucide-navigation" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none"><polygon transform="rotate(25.5735 7.26917 4.48399)" stroke="null" id="svg_1" points="0.26425468921661377,4.115314036607742 14.274086892604828,-2.5209226310253143 7.637851655483246,11.488909751176834 6.1631311774253845,5.590032607316971 0.26425468921661377,4.115314036607742 " /></svg>。
 #### 修改配置
 修改`quartz.config.ts`，将组件添加到合适的位置
 ```ts title="quartz.config.ts" hl:10,25 {10,25}
