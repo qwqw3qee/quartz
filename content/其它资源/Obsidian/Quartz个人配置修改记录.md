@@ -1,6 +1,6 @@
 ---
 created: 2024-09-23T11:35:56.000+08:00
-updated: 2024-09-26T01:46:53.714+08:00
+updated: 2024-09-26T02:11:24.159+08:00
 tags:
   - quartz
   - obsidian
@@ -268,13 +268,11 @@ const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) =>
 
 修改`./quartz/plugins/transformers/lastmod.ts`，增加对属性`created`的解析。
 ```ts title="lastmod.ts" hl:4 {4}
-			// ...
               } else if (source === "frontmatter" && file.data.frontmatter) {
                 // 以下是新增代码
                 created ||= file.data.frontmatter.created as MaybeDate
                 // 以上是新增代码
-				created ||= file.data.frontmatter.date as MaybeDate
-          // ...
+                created ||= file.data.frontmatter.date as MaybeDate
 ```
 修改`./quartz/components/Date.tsx`，给日期格式化函数增加时间显示。（也可以不修改，在`ContentMeta.tsx`中自行编写格式化函数）：
 ```tsx title="Date.tsx" hl:6-7 {6-7}
