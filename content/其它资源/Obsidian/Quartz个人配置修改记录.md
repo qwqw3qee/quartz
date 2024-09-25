@@ -1,6 +1,6 @@
 ---
 created: 2024-09-23T11:35:56.000+08:00
-updated: 2024-09-25T16:05:30.989+08:00
+updated: 2024-09-25T16:29:41.724+08:00
 tags:
   - quartz
   - obsidian
@@ -120,6 +120,7 @@ img {
   }),
 ```
 ## 引入插件或组件修改
+所有引入插件或组件均存放在[quartz/quartz/extra at v4 · qwqw3qee/quartz · GitHub](https://github.com/qwqw3qee/quartz/tree/v4/quartz/extra)。
 ### 移动端导航目录
 #### 添加文件
 插件代码：[quartz-site/extra at main · MikeKneeB/quartz-site · GitHub](https://github.com/MikeKneeB/quartz-site/tree/main/extra)
@@ -295,6 +296,7 @@ const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) =>
   }
 
 ```
+
 
 
 
