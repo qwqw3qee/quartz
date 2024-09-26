@@ -1,6 +1,6 @@
 ---
 created: 2024-09-23T11:35:56.000+08:00
-updated: 2024-09-26T02:11:24.159+08:00
+updated: 2024-09-27T00:57:10.525+08:00
 tags:
   - quartz
   - obsidian
@@ -146,6 +146,8 @@ Component.RecentNotes({
     },
   }),
 ```
+### 手动指定字体样式
+可以将Google Fonts的css的下载到本地导入，并下载css中的字体放到静态资源目录中，详见：[[../踩坑记录/Google Fonts下载到本地服务器加速网站响应|Google Fonts下载到本地服务器加速网站响应]]。
 ## 引入插件或组件修改
 所有引入插件或组件均存放在[quartz/quartz/extra at v4 · qwqw3qee/quartz · GitHub](https://github.com/qwqw3qee/quartz/tree/v4/quartz/extra)。
 ### 移动端导航目录
@@ -344,8 +346,19 @@ const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) =>
   }
 ```
 
+### 修改网站logo
+方案一：直接替换`./quartz/static/icon.png`。
+（目前使用）方案二：添加`./quartz/static/favicon.svg`，并修改`./quartz/components/Head.tsx`。
+```tsx title="Head.tsx"
+// const iconPath = joinSegments(baseDir, "static/icon.png")
+const iconPath = joinSegments(baseDir, "static/favicon.svg")
+```
 
-
-
-
+### 修改谷歌字体源（未使用）
+修改`quartz\util\theme.ts`，将网址替换为镜像站。
+```ts title="theme.ts"
+//return `https://fonts.googleapis.com/css2?family=${code}&family=${header}:wght@400;700&family=${body}:ital,wght@0,400;0,600;1,400;1,600&display=swap`
+return `https://fonts.loli.net/css2?family=${code}&family=${header}:wght@400;700&family=${body}:ital,wght@0,400;0,600;1,400;1,600&display=swap`
+```
+由于具有侵入性修改，并且体验优化非最佳，目前使用的方案见[[Quartz个人配置修改记录#手动指定字体样式|手动指定字体样式]]。
 
