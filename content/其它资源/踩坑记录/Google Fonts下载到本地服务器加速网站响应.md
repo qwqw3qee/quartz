@@ -10,7 +10,6 @@ dg-publish: true
 部署Quartz到静态网站托管服务后，由于服务商在国外，网站响应和加载速度一直不理想，起初也没在意。配置时发现网站使用Google Fonts，每次加载时都会从谷歌下载字体，必然会拖慢国内用户的访问速度。Quartz可以直接配置使用服务器本地字体，但是我又不想下载完整字体，于是萌生了把从Google Fonts加载的字体下载下来的念头，从网上搜了下确实可行，于是便有了本文。下面是修改步骤。
 ## 找到导入Google Fonts的CSS的链接
 在Quartz项目中，`./quartz/util/theme.ts`定义了css的链接。
-`
 ```ts title="theme.ts" hl:3 {3}
 export function googleFontHref(theme: Theme) {
   const { code, header, body } = theme.typography
@@ -34,7 +33,6 @@ https://fonts.googleapis.com/css2?family=IBM%20Plex%20Mono&family=Schibsted%20Gr
 ```
 ## 打开链接，下载CSS与字体
 链接内容示例如下，此处临时将其保存为`local.google.fonts.css`。
-
 ```css title="local.google.fonts.css" 
 /* cyrillic-ext */
 @font-face {
