@@ -12,7 +12,7 @@ title: 🏡首页
 created: 2024-09-13T14:36:50.000+08:00
 updated: 2024-09-25T01:39:05.133+08:00
 ---
- ![[./Z-Others/icons/avatar.png|128]]
+ ![[./Z-Others/icons/avatar_128.png|avatar_128]]
 <center>Lazyjoy的笔记空间</center>
 
 ---
