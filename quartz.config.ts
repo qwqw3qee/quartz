@@ -12,8 +12,7 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "google",
-      tagId: "G-D12FXJ1RCD",
+      provider: null,
     },
     locale: "zh-CN",
     baseUrl: "lazyjack.12123123.xyz",
