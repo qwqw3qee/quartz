@@ -1,6 +1,6 @@
 ---
 created: 2024-09-23T11:35:56.000+08:00
-updated: 2024-09-27T00:57:10.525+08:00
+updated: 2024-09-27T13:23:50.750+08:00
 tags:
   - quartz
   - obsidian
@@ -148,6 +148,9 @@ Component.RecentNotes({
 ```
 ### 手动指定字体样式
 可以将Google Fonts的css的下载到本地导入，并下载css中的字体放到静态资源目录中，详见：[[../踩坑记录/Google Fonts下载到本地服务器加速网站响应|Google Fonts下载到本地服务器加速网站响应]]。
+### 添加robots.txt
+将robots.txt放入`./content`目录即可。
+参考：[About robots.txt and crawlers | Eilleen's e-Notebook](https://quartz.eilleeenz.com/About-robots.txt-and-crawlers)
 ## 引入插件或组件修改
 所有引入插件或组件均存放在[quartz/quartz/extra at v4 · qwqw3qee/quartz · GitHub](https://github.com/qwqw3qee/quartz/tree/v4/quartz/extra)。
 ### 移动端导航目录
