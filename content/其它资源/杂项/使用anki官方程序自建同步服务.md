@@ -33,6 +33,7 @@ SYNC_USER1=user:pass ~/syncserver/bin/python -m anki.syncserver
 |      SYNC_HOST=你的域名       |                               绑定域名（配合反向代理软件使用）                               |
 |      SYNC_PORT=8080       |                                绑定端口为8080（默认值）                                |
 | MAX_SYNC_PAYLOAD_MEGS=100 |                                  限制上传大小为100                                  |
+
 `SYNC_USER1` 声明了第一个用户和密码，并且必须进行设置。如果您希望设置多个帐户，您可以选择声明 `SYNC_USER2` 、 `SYNC_USER3` 等。
 如果需要兼容旧版Anki客户端，还需要配置`SYNC_ENDPOINT` and `SYNC_ENDPOINT_MEDIA`，详见[官方文档](https://docs.ankiweb.net/sync-server.html#client-setup)。
 ## 使用脚本运行
