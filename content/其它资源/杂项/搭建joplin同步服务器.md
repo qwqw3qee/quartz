@@ -3,8 +3,8 @@ tags:
   - joplin
   - 教程
 dg-publish: true
-created: 2024-09-06T13:58:55.000+08:00
-updated: 2024-09-23T15:56:30.373+08:00
+created: 2021-11-07T20:08:00.000+08:00
+updated: 2024-09-28T16:24:09.931+08:00
 ---
 > github地址：[https://github.com/laurent22/joplin/tree/dev/packages/server](https://github.com/laurent22/joplin/tree/dev/packages/server "https://github.com/laurent22/joplin/tree/dev/packages/server")  
 > docker镜像地址：[https://hub.docker.com/r/joplin/server](https://hub.docker.com/r/joplin/server "https://hub.docker.com/r/joplin/server")
