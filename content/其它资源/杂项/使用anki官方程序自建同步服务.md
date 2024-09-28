@@ -49,7 +49,7 @@ exec /root/syncserver/bin/python -m anki.syncserver
 注意使用`exec`命令执行程序，可保证进程直接在前台运行，防止`supervisor`无法直接管理子进程。也可以不使用`exec`，则在守护进程中需要额外进行配置。
 可以配置守护进程自动运行脚本，如果有配置修改，修改后重启脚本便可。
 ## 配置守护进程
-这里使用supervisor`supervisor`进行守护进程。在`/etc/supervisor/conf.d`中，新建`ankioffical.conf`，内容如下，注意根据实际情况修改脚本路径：
+这里使用`supervisor`进行守护进程。在`/etc/supervisor/conf.d`中，新建`ankioffical.conf`，内容如下，注意根据实际情况修改脚本路径：
 ```ini title="ankioffical.conf"
 [program:ankioffical]
 command=/root/start_syncserver.sh             ; the program (relative uses PATH, can take args)
