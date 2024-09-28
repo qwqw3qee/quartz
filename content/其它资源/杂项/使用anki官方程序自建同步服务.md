@@ -4,7 +4,7 @@ tags:
   - supervisor
   - nginx
 created: 2024-09-28T14:48:23.000+08:00
-updated: 2024-09-28T16:30:03.599+08:00
+updated: 2024-09-28T16:41:31.347+08:00
 dg-publish: true
 ---
 > 官方文档：[Sync Server - Anki Manual](https://docs.ankiweb.net/sync-server.html#self-hosted-sync-server)
