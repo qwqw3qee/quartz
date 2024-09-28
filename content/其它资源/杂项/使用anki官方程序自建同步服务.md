@@ -4,7 +4,7 @@ tags:
   - supervisor
   - nginx
 created: 2024-09-28T14:48:23.000+08:00
-updated: 2024-09-28T16:26:05.659+08:00
+updated: 2024-09-28T16:30:03.599+08:00
 dg-publish: true
 ---
 > 官方文档：[Sync Server - Anki Manual](https://docs.ankiweb.net/sync-server.html#self-hosted-sync-server)
@@ -80,15 +80,15 @@ server {
     ssl_session_timeout   5m;
     ssl_protocols         TLSv1 TLSv1.1 TLSv1.2;
     ssl_ciphers           HIGH:!aNULL:!MD5:!EXPORT56:!EXP;
-    set_real_ip_from 0.0.0.0/0;
-    real_ip_header X-Forwarded-For;
+    set_real_ip_from      0.0.0.0/0;
+    real_ip_header        X-Forwarded-For;
     location / {
         proxy_http_version 1.0;
-        proxy_pass         http://127.0.0.1:27701/;
+        proxy_pass          http://127.0.0.1:27701/;
         # 传递真实客户端 IP
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header Host $host;
+        proxy_set_header    X-Real-IP $remote_addr;
+        proxy_set_header    X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header    Host $host;
     }
 }
 ```
