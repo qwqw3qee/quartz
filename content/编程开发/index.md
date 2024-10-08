@@ -3,36 +3,40 @@ dg-publish: true
 dg-pinned: true
 dg-show-local-graph: true
 dg-hide: true
-dg-path: 编程开发/index.md
-title: 编程开发
+dg-path: 其它资源/目录.md
+title: 其它资源
 tags:
   - 目录
-path: content/编程开发
+path: content/其它资源
 en-filename: index
-created: 2024-09-17T01:00:41.000+08:00
-updated: 2024-09-23T15:56:30.297+08:00
+created: 2024-09-17T15:01:09.000+08:00
+updated: 2024-09-25T01:22:40.990+08:00
 ---
-## Golang
-### 基础使用
-- [[./Golang/基础使用/二维数组|二维数组]]
-- [[./Golang/基础使用/sync.map|sync.map]]
-- [[./Golang/基础使用/string|string]]
-- [[./Golang/基础使用/map|map]]
-- [[./Golang/基础使用/interface|interface]]
-- [[./Golang/基础使用/go语言异常捕获|go语言异常捕获]]
-- [[./Golang/基础使用/go语言error|go语言error]]
-- [[./Golang/基础使用/go基础简明笔记|go基础简明笔记]]
-- [[./Golang/基础使用/defer|defer]]
-- [[./Golang/基础使用/defer执行顺序问题|defer执行顺序问题]]
-- [[./Golang/基础使用/context|context]]
-- [[./Golang/基础使用/channel|channel]]
+## 踩坑记录
+- [[./踩坑记录/更改 Windows 11 上的网络适配器优先级|更改 Windows 11 上的网络适配器优先级]]
+- [[./踩坑记录/永久性解决 Visio 中公式变形问题_visio 中公式复制保存会变形|永久性解决 Visio 中公式变形问题_visio 中公式复制保存会变形]]
+- [[./踩坑记录/彻底关闭 Win10 自动更新|彻底关闭 Win10 自动更新]]
+- [[./踩坑记录/win10 怎么关闭自动显卡驱动更新？|win10 怎么关闭自动显卡驱动更新？]]
+- [[./踩坑记录/VMware 网络配置的坑：SSH 连接慢、Linux 无法上外网|VMware 网络配置的坑：SSH 连接慢、Linux 无法上外网]]
+- [[./踩坑记录/Visio 里 Mathtype 公式变形问题解决_visio 中 mathtype 变形|Visio 里 Mathtype 公式变形问题解决_visio 中 mathtype 变形]]
+- [[./踩坑记录/supervisor守护进程子进程问题|supervisor守护进程子进程问题]]
+- [[./踩坑记录/Nginx警告the ssl directive is deprecated|Nginx警告the ssl directive is deprecated]]
+- [[./踩坑记录/Google Fonts下载到本地服务器加速网站响应|Google Fonts下载到本地服务器加速网站响应]]
 
-### 算法调用与实现
-- [[./Golang/算法调用与实现/栈|栈]]
-- [[./Golang/算法调用与实现/并查集|并查集]]
-- [[./Golang/算法调用与实现/优先队列（小根堆）|优先队列（小根堆）]]
-- [[./Golang/算法调用与实现/二分查找|二分查找]]
-- [[./Golang/算法调用与实现/sort|sort]]
+## Obsidian
+- [[./Obsidian/将 Obsidian 页面按自定义模板导出为 Word 文档|将 Obsidian 页面按自定义模板导出为 Word 文档]]
+- [[./Obsidian/【LaTeX 应用】常用数学公式和符号|【LaTeX 应用】常用数学公式和符号]]
+- [[./Obsidian/Quartz个人配置修改记录|Quartz个人配置修改记录]]
+- [[./Obsidian/Quartz与Enveloppe插件结合助力Obsidian搭建数字花园|Quartz与Enveloppe插件结合助力Obsidian搭建数字花园]]
+- [[./Obsidian/obsidian资源整理|obsidian资源整理]]
+- [[./Obsidian/obsidian发布工具|obsidian发布工具]]
+- [[./Obsidian/Obsidian 网页剪藏 - 简悦   Local REST API|Obsidian 网页剪藏 - 简悦   Local REST API]]
 
-## Vue
-- [[./Vue.js/Vue2简明笔记|Vue2简明笔记]]
+## 杂项
+- [[./杂项/搭建joplin同步服务器|搭建joplin同步服务器]]
+- [[./杂项/自建anki服务器教程|自建anki服务器教程]]
+- [[./杂项/使用anki官方程序自建同步服务|使用anki官方程序自建同步服务]]
+- [[./杂项/个人使用字体整理|个人使用字体整理]]
+- [[./杂项/word文件代码高亮|word文件代码高亮]]
+- [[./杂项/Word 转 PDF—保留图片高分辨率同时不丢失书签 _ 超链接|Word 转 PDF—保留图片高分辨率同时不丢失书签 _ 超链接]]
+- [[./杂项/mobaxterm资源|mobaxterm资源]]
