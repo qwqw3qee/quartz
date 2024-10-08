@@ -4,7 +4,7 @@ tags:
   - supervisor
   - nginx
 created: 2024-09-28T14:48:23.000+08:00
-updated: 2024-09-28T16:41:31.347+08:00
+updated: 2024-10-08T20:29:02.686+08:00
 dg-publish: true
 ---
 > 官方文档：[Sync Server - Anki Manual](https://docs.ankiweb.net/sync-server.html#self-hosted-sync-server)
@@ -35,7 +35,7 @@ SYNC_USER1=user:pass ~/syncserver/bin/python -m anki.syncserver
 | MAX_SYNC_PAYLOAD_MEGS=100 |                                  限制上传大小为100                                  |
 
 `SYNC_USER1` 声明了第一个用户和密码，并且必须进行设置。如果您希望设置多个帐户，您可以选择声明 `SYNC_USER2` 、 `SYNC_USER3` 等。
-如果需要兼容旧版Anki客户端，还需要配置`SYNC_ENDPOINT` and `SYNC_ENDPOINT_MEDIA`，详见[官方文档](https://docs.ankiweb.net/sync-server.html#client-setup)。
+如果需要兼容旧版Anki客户端，还需要配置`SYNC_ENDPOINT` 和 `SYNC_ENDPOINT_MEDIA`，详见[官方文档](https://docs.ankiweb.net/sync-server.html#client-setup)。
 ## 使用脚本运行
 新建脚本文件并命名为`start_syncserver.sh`，内容如下：
 ```shell title="start_syncserver.sh"
