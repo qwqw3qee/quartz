@@ -17,16 +17,16 @@ updated: 2024-09-25T01:22:40.990+08:00
 - [[./踩坑记录/更改 Windows 11 上的网络适配器优先级|更改 Windows 11 上的网络适配器优先级]]
 - [[./踩坑记录/彻底关闭 Win10 自动更新|彻底关闭 Win10 自动更新]]
 - [[./踩坑记录/win10 怎么关闭自动显卡驱动更新？|win10 怎么关闭自动显卡驱动更新？]]
-- [[./踩坑记录/Visio 里 Mathtype 公式变形问题解决_visio 中 mathtype 变形|Visio 里 Mathtype 公式变形问题解决_visio 中 mathtype 变形]]
 - [[./踩坑记录/VMware 网络配置的坑：SSH 连接慢、Linux 无法上外网|VMware 网络配置的坑：SSH 连接慢、Linux 无法上外网]]
+- [[./踩坑记录/Visio 里 Mathtype 公式变形问题解决_visio 中 mathtype 变形|Visio 里 Mathtype 公式变形问题解决_visio 中 mathtype 变形]]
 - [[./踩坑记录/supervisor守护进程子进程问题|supervisor守护进程子进程问题]]
 - [[./踩坑记录/Nginx警告the ssl directive is deprecated|Nginx警告the ssl directive is deprecated]]
 - [[./踩坑记录/Google Fonts下载到本地服务器加速网站响应|Google Fonts下载到本地服务器加速网站响应]]
 
 ## Obsidian
 - [[./Obsidian/将 Obsidian 页面按自定义模板导出为 Word 文档|将 Obsidian 页面按自定义模板导出为 Word 文档]]
-- [[./Obsidian/【LaTeX 应用】常用数学公式和符号|【LaTeX 应用】常用数学公式和符号]]
 - [[./Obsidian/Quartz个人配置修改记录|Quartz个人配置修改记录]]
+- [[./Obsidian/【LaTeX 应用】常用数学公式和符号|【LaTeX 应用】常用数学公式和符号]]
 - [[./Obsidian/Quartz与Enveloppe插件结合助力Obsidian搭建数字花园|Quartz与Enveloppe插件结合助力Obsidian搭建数字花园]]
 - [[./Obsidian/obsidian资源整理|obsidian资源整理]]
 - [[./Obsidian/obsidian发布工具|obsidian发布工具]]
