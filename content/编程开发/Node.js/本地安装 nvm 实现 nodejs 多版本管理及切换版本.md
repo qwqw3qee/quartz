@@ -7,7 +7,7 @@ tags:
 banner: https://images.unsplash.com/photo-1727709350469-5fde916217a8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w0Njc1ODd8MHwxfHJhbmRvbXx8fHx8fHwxfHwxNzI4NTc3MjYxfA&ixlib=rb-4.0.3&q=85&fit=crop&w=1146&max-h=540
 banner_icon: 🔖
 created: 2024-10-11T00:21:48.000+08:00
-updated: 2024-10-11T01:33:22.327+08:00
+updated: 2024-10-12T16:21:16.429+08:00
 dg-publish: true
 ---
 > 原文链接： [nodejs 版本过高导致 vue-cli 项目无法正常运行解决方案_nodejs 版本太高 - CSDN 博客]( https://blog.csdn.net/m0_60416689/article/details/135522645)
@@ -15,11 +15,11 @@ dg-publish: true
 
 ## 一、nvm 的下载
 推荐 github 下载最新版本：[Releases · coreybutler/nvm-windows · GitHub](https://github.com/coreybutler/nvm-windows/releases "Releases · coreybutler/nvm-windows · GitHub")
-![[../../Z-Others/assets/79327a48f95d2cfe111bbf7a73a5be34_MD5.png|79327a48f95d2cfe111bbf7a73a5be34_MD5]]
+![[../../Z-Others/assets/79327a48f95d2cfe111bbf7a73a5be34_MD5.png|]]
 
 如果 github 打不开可以下载这个 [nvm 中文网](https://nvm.uihtm.com/ "nvm中文网")
 
-![[../../Z-Others/assets/af8464b72d5ca5bb1e347e3717aa53f1_MD5.png|af8464b72d5ca5bb1e347e3717aa53f1_MD5]]
+![[../../Z-Others/assets/af8464b72d5ca5bb1e347e3717aa53f1_MD5.png|]]
 
 ##  二、nvm 的安装
 
@@ -32,22 +32,22 @@ dg-publish: true
 
 之后默认 install 安装
 
-![[../../Z-Others/assets/9ed29b55c6cd52958dbb32dd8530cc95_MD5.png|9ed29b55c6cd52958dbb32dd8530cc95_MD5]]
+![[../../Z-Others/assets/9ed29b55c6cd52958dbb32dd8530cc95_MD5.png|]]
 
-![[../../Z-Others/assets/815577fa1d033628201ea7e9604afa75_MD5.png|815577fa1d033628201ea7e9604afa75_MD5]]
+![[../../Z-Others/assets/815577fa1d033628201ea7e9604afa75_MD5.png|]]
 
-![[../../Z-Others/assets/ceae02f3f3df20f7c5ecfd17538d5b14_MD5.png|ceae02f3f3df20f7c5ecfd17538d5b14_MD5]]
+![[../../Z-Others/assets/ceae02f3f3df20f7c5ecfd17538d5b14_MD5.png|]]
 
 ## 三、nvm 的检查
 ###  `nvm -v` 查看 nvm 版本
-![[../../Z-Others/assets/deba55387f4d63ad01289f20339c9471_MD5.png|deba55387f4d63ad01289f20339c9471_MD5]]
+![[../../Z-Others/assets/deba55387f4d63ad01289f20339c9471_MD5.png|]]
 ###   `nvm list` 查看已安装 node.js 版本
-![[../../Z-Others/assets/5fe06cf85bc93069a294d373bcca2afc_MD5.png|5fe06cf85bc93069a294d373bcca2afc_MD5]]
+![[../../Z-Others/assets/5fe06cf85bc93069a294d373bcca2afc_MD5.png|]]
 ###  `nvm list available` 查看 node.js 可安装版本
-![[../../Z-Others/assets/43634838e3eec0d4eece2590afd171fa_MD5.png|43634838e3eec0d4eece2590afd171fa_MD5]]
+![[../../Z-Others/assets/43634838e3eec0d4eece2590afd171fa_MD5.png|]]
 ## 四、nvm 的配置
 ### 1. 安装目录找到 settings.txt 设置镜像（下载加快）
-![[../../Z-Others/assets/ec0d3251315697b9b5a8d983e867a8eb_MD5.png|ec0d3251315697b9b5a8d983e867a8eb_MD5]]
+![[../../Z-Others/assets/ec0d3251315697b9b5a8d983e867a8eb_MD5.png|]]
 
 打开 settings.txt 增加内容如下： 
 ```txt title="settings.txt"
@@ -60,7 +60,7 @@ node_mirror: https://npm.taobao.org/mirrors/node/
 npm_mirror: https://npm.taobao.org/mirrors/npm/
 ```
 
-![[../../Z-Others/assets/b942fa55c5cbdf6e7c8656a910a383d1_MD5.png|b942fa55c5cbdf6e7c8656a910a383d1_MD5]]
+![[../../Z-Others/assets/b942fa55c5cbdf6e7c8656a910a383d1_MD5.png|]]
 
 ###  2. 配置环境变量及安装切换不同版本 node.js
 1、如果安装的版本是低版本需要卸载当前的版本。
@@ -76,19 +76,19 @@ npm_mirror: https://npm.taobao.org/mirrors/npm/
 nvm uninstall 18.19.0 （版本号）
 ```
 
-![[../../Z-Others/assets/77a328b11c35e2cb239f16f3bf7c8c77_MD5.png|77a328b11c35e2cb239f16f3bf7c8c77_MD5]]
+![[../../Z-Others/assets/77a328b11c35e2cb239f16f3bf7c8c77_MD5.png|]]
 ### 4. 安装新版本
 ```shell
 nvm install 18.19.0（你要装的版本号）
 ```
 
-![[../../Z-Others/assets/799888fbc8b2397d70dd20b7ac8490c5_MD5.png|799888fbc8b2397d70dd20b7ac8490c5_MD5]]
+![[../../Z-Others/assets/799888fbc8b2397d70dd20b7ac8490c5_MD5.png|]]
 
-![[../../Z-Others/assets/dfe588d35a8b3ca3183e4850da5319f0_MD5.png|dfe588d35a8b3ca3183e4850da5319f0_MD5]]
+![[../../Z-Others/assets/dfe588d35a8b3ca3183e4850da5319f0_MD5.png|]]
 
 ### 5. `nvm use` 切换 node.js 版本
 
-![[../../Z-Others/assets/0effec397be553de839a3cf770457f86_MD5.png|0effec397be553de839a3cf770457f86_MD5]]
+![[../../Z-Others/assets/0effec397be553de839a3cf770457f86_MD5.png|]]
 
 ### 6.nvm 命令提示
 1.  `nvm arch` ：显示 node 是运行在 32 位还是 64 位。  
@@ -108,12 +108,12 @@ nvm install 18.19.0（你要装的版本号）
 `NVM_HOME` ，nvm 安装地址。
 `NVM_SYMLINK` ，node 安装地址。
 
-![[../../Z-Others/assets/ca34847dc473183632ae6bc6deda5571_MD5.png|ca34847dc473183632ae6bc6deda5571_MD5]]
+![[../../Z-Others/assets/ca34847dc473183632ae6bc6deda5571_MD5.png|]]
 
 ### 8. node 环境配置
 类似于 [Node.js 安装详细过程 - CSDN 博客](https://blog.csdn.net/m0_60416689/article/details/135349451?spm=1001.2014.3001.5501 "Node.js安装详细过程-CSDN博客")
 在对应的目录下新建两个文件夹 `node_cache` 以及 `node_global` 。
-![[../../Z-Others/assets/64653027778a60b94c744b39c0e377b8_MD5.png|64653027778a60b94c744b39c0e377b8_MD5]]
+![[../../Z-Others/assets/64653027778a60b94c744b39c0e377b8_MD5.png|]]
 
 创建完两个文件夹后，在 cmd 窗口中输入以下命令（两个路径即是两个文件夹的路径）：
 ```shell
@@ -123,10 +123,10 @@ npm config set cache "D:\project needs\nodefile\node\node_cache"
 
 接下来设置电脑环境变量，右键 **我的电脑**=>**属性** =>**高级系统设置** =>**环境变量** ，进入以下环境变量对话框。  
 在【**系统变量**】新建环境变量 `NODE_PATH`，值为 `D:\project needs\nodefile\node\node_global`，其中 `D:\project needs\nodefile\node\node_global` 是上述创建的全局模块安装路径文件夹:
-![[../../Z-Others/assets/a7f5d4775ef52a09c0a715baa7073b88_MD5.png|a7f5d4775ef52a09c0a715baa7073b88_MD5]]
+![[../../Z-Others/assets/a7f5d4775ef52a09c0a715baa7073b88_MD5.png|]]
 
 修改 **【用户变量】** 中的 `path` 变量，将 `C:\Users\JW\AppData\Roaming\npm` 修改为 `D:\project needs\nodefile\node\node_global`
-![[../../Z-Others/assets/b8076f360d1dc3f87330747e19656039_MD5.png|b8076f360d1dc3f87330747e19656039_MD5]]
+![[../../Z-Others/assets/b8076f360d1dc3f87330747e19656039_MD5.png|]]
 
 点击确定后，配置完成。 
 测试是否配置成功，在 cmd 窗口中输入以下指定全局安装 yarn
@@ -134,14 +134,14 @@ npm config set cache "D:\project needs\nodefile\node\node_cache"
 npm install -g yarn
 ```
 
-![[../../Z-Others/assets/1ad3de2017cbdac50d9a20ab347e6ea4_MD5.png|1ad3de2017cbdac50d9a20ab347e6ea4_MD5]]
+![[../../Z-Others/assets/1ad3de2017cbdac50d9a20ab347e6ea4_MD5.png|]]
 
 针对 `yarn` 命令：需要做全局配置，才能使用，在 **【用户变量】** 配置：[^2] 
 
-![[../../Z-Others/assets/f03a3b70f5271d9c25b24c90e3ddf12d_MD5.png|f03a3b70f5271d9c25b24c90e3ddf12d_MD5]]
+![[../../Z-Others/assets/f03a3b70f5271d9c25b24c90e3ddf12d_MD5.png|]]
 
  查看是否配置成功：
-![[../../Z-Others/assets/168a39b67b70b0ff874dd5db8158b8b4_MD5.png|168a39b67b70b0ff874dd5db8158b8b4_MD5]]
+![[../../Z-Others/assets/168a39b67b70b0ff874dd5db8158b8b4_MD5.png|]]
 
 ### 9.npm 命令提示
  命令 及作用  ：
