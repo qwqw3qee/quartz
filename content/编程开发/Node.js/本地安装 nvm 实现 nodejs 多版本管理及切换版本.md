@@ -7,7 +7,7 @@ tags:
 banner: https://images.unsplash.com/photo-1727709350469-5fde916217a8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w0Njc1ODd8MHwxfHJhbmRvbXx8fHx8fHwxfHwxNzI4NTc3MjYxfA&ixlib=rb-4.0.3&q=85&fit=crop&w=1146&max-h=540
 banner_icon: 🔖
 created: 2024-10-11T00:21:48.000+08:00
-updated: 2024-10-12T16:52:10.551+08:00
+updated: 2024-10-12T18:11:47.293+08:00
 dg-publish: true
 ---
 > 原文链接： [nodejs 版本过高导致 vue-cli 项目无法正常运行解决方案_nodejs 版本太高 - CSDN 博客]( https://blog.csdn.net/m0_60416689/article/details/135522645)
@@ -21,7 +21,7 @@ dg-publish: true
 
 ![[../../Z-Others/assets/af8464b72d5ca5bb1e347e3717aa53f1_MD5.png|img]]
 
-##  二、nvm 的安装
+## 二、nvm 的安装
 
 > [!attention]
 > 注：最好不要装在 C 盘
