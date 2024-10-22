@@ -10,26 +10,17 @@ export const sharedPageComponents: SharedLayout = {
     Component.Comments({
       provider: 'giscus',
       options: {
-        // from data-repo
         repo: 'qwqw3qee/note-comments',
-        // from data-repo-id
         repoId: 'R_kgDOM0_3Dw',
-        // from data-category
         category: 'Announcements',
-        // from data-category-id
         categoryId: 'DIC_kwDOM0_3D84CiqhN',
-        // how to map pages -> discussions
-        // defaults to 'url'
         mapping: "pathname",
-        // use strict title matching
-        // defaults to true
         strict: false,
-        // whether to enable reactions for the main post
-        // defaults to true
         reactionsEnabled: true,
-        // where to put the comment input box relative to the comments
-        // defaults to 'bottom'
         inputPosition: "top",
+        themeUrl: "https://giscus.app/themes/", // corresponds to quartz/static/giscus/
+        lightTheme: "noborder_light", // corresponds to light-theme.css in quartz/static/giscus/
+        darkTheme: "noborder_gray", // corresponds to dark-theme.css quartz/static/giscus/
       }
     }),
   ],
