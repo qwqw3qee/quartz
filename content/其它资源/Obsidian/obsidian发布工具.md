@@ -7,7 +7,7 @@ tags:
   - quartz
 dg-publish: true
 created: 2024-09-19T16:43:56.000+08:00
-updated: 2024-09-25T11:18:01.443+08:00
+updated: 2025-05-08T11:04:14.829+08:00
 ---
 ## 官方publish插件
 核心插件，启用发布功能即可，需要官方订阅。
@@ -44,7 +44,7 @@ updated: 2024-09-25T11:18:01.443+08:00
 ## Enveloppe
 > [!info]
 > - 项目地址：[GitHub - Enveloppe/obsidian-enveloppe: Enveloppe helps you to publish your notes on a GitHub repository from your Obsidian Vault, for free!](https://github.com/Enveloppe/obsidian-enveloppe)
-> - 演示/说明文档：[Home](https://enveloppe.github.io/)
+> - 演示/说明文档：[Enveloppe](https://enveloppe.ovh/)
 
 优点：
 1. 静态博客通用解决方案，支持[[obsidian发布工具#Quartz|Quartz]]，具体操作参考[[./Quartz与Enveloppe插件结合助力Obsidian搭建数字花园|Quartz与Enveloppe插件结合助力Obsidian搭建数字花园]]。
@@ -53,6 +53,11 @@ updated: 2024-09-25T11:18:01.443+08:00
 不足：
 1. 配置起来略微繁琐，文档解释不够清晰，理解起来有点困难。
 2. 检查所有笔记较为耗时，管理方面有所欠缺，不过可以理解，毕竟是个通用的发布框架。
+
+与Obsidian兼容较好的博客模板：
+1. [[obsidian发布工具#Quartz|Quartz]]
+2. MkDocs
+3. [LincDocs](https://github.com/LincDocs/Workflow)
 
 ## 参考链接
 - [Obsidian实现免费第三方发布的安逸方案\_服务软件\_什么值得买](https://post.smzdm.com/p/90924/)
