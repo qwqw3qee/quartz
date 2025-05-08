@@ -7,7 +7,7 @@ tags:
 banner: https://i-blog.csdnimg.cn/direct/67e0a8e096ba48219d7a1cf5bf2468f8.jpeg
 dg-publish: true
 created: 2025-05-08T10:11:03.000+08:00
-updated: 2025-05-08T10:14:27.403+08:00
+updated: 2025-05-08T10:15:32.921+08:00
 ---
 >  本文转自网络文章，转载此文章仅为个人收藏，分享知识，如有侵权，请联系博主进行删除。
 >  原文地址： [Windows 修改启动服务及注册表提示拒绝访问解决方法_服务拒绝访问 - CSDN 博客](https://blog.csdn.net/jimmyxing001/article/details/140890369)
