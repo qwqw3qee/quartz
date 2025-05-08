@@ -1,6 +1,6 @@
 ---
 url: https://blog.csdn.net/jimmyxing001/article/details/140890369
-title: Windows 修改启动服务及注册表提示拒绝访问解决方法_服务拒绝访问 - CSDN 博客
+title: Windows 修改启动服务及注册表提示拒绝访问解决方法_服务拒绝访问
 date: 2025-05-08 10:11:03
 tags:
   - 转载
