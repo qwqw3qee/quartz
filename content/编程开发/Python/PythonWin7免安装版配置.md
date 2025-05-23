@@ -1,12 +1,17 @@
 ---
 created: 2025-05-23T16:44:29.000+08:00
-updated: 2025-05-23T17:20:59.906+08:00
+updated: 2025-05-23T17:34:08.879+08:00
 dg-publish: true
 ---
 项目地址：[GitHub - adang1345/PythonWin7: Python 3.9+ installers that support Windows 7 SP1 and Windows Server 2008 R2 SP1](https://github.com/adang1345/PythonWin7?tab=readme-ov-file)
 
 Python官方自Python 3.9开始停止对win7的支持，而PythonWin7则填补了这一空白，让这些老旧系统也能享受到Python的强大功能。
 为了便于迁移，本文对embed版本进行配置，方便随时迁移到没有公网环境的win7系统中使用。
+
+## 系统准备
+
+> 注意：必须安装Windows更新KB2533623才能运行Python。请确保您的计算机通过Windows更新保持最新状态。或者，您可以手动安装更新KB3063858，它取代了KB2533623。可以在以下链接获取 [32-bit Windows](https://www.microsoft.com/en-us/download/details.aspx?id=47409) 或 [64-bit Windows](https://www.microsoft.com/en-gb/download/details.aspx?id=47442)的更新KB3063858。
+> 
 ## 下载python离线包
 
 下载地址：[PythonWin7/3.13.3/python-3.13.3-embed-amd64.zip at master · adang1345/PythonWin7 · GitHub](https://github.com/adang1345/PythonWin7/blob/master/3.13.3/python-3.13.3-embed-amd64.zip)
