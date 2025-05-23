@@ -40,11 +40,12 @@ Python官方自Python 3.9开始停止对win7的支持，而PythonWin7则填补�
 记事本打开`python313._pth`，去除import site的注释
 
 ```python
-python37.zip
+python313.zip
 .
 
 # Uncomment to run site.main() automatically
 import site
+
 ```
 
 查看已安装的Lib，运行
