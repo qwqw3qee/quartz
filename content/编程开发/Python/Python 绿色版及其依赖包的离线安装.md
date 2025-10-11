@@ -1,6 +1,6 @@
 ---
 url: https://studynotes.readthedocs.io/zh/main/k-python/offLine.html
-title: 4_ Python 绿色版及其依赖包的离线安装 —  尤金的一己之见  alpha 文档
+title: Python 绿色版及其依赖包的离线安装
 date: 2025-10-10 09:53:47
 tags:
   - 转载
