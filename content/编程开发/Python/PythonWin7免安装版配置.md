@@ -1,6 +1,6 @@
 ---
 created: 2025-05-23T16:44:29.000+08:00
-updated: 2025-10-11T14:11:50.133+08:00
+updated: 2026-02-26T10:46:06.348+08:00
 dg-publish: true
 tags:
   - python
@@ -71,8 +71,8 @@ pip                25.1.1
 
 此步正常安装即可，后续通过脚本进行备份与恢复。
 ## 修复&绿化&卸载脚本
-新建一个文本文档，粘贴以下内容，保存为`修复&绿化&卸载.bat`，文件编码为`GBK`。脚本原理参考：[[./Python 绿色版及其依赖包的离线安装|Python 绿色版及其依赖包的离线安装]]
-```shell title="修复&绿化&卸载.bat"
+新建一个文本文档，粘贴以下内容，保存为`修复_绿化_卸载.bat`，文件编码为`GBK`。脚本原理参考：[[./Python 绿色版及其依赖包的离线安装|Python 绿色版及其依赖包的离线安装]]
+```shell title="修复\_绿化\_卸载.bat"
 @echo off
 chcp 936 >nul
 setlocal EnableDelayedExpansion
@@ -279,7 +279,7 @@ echo 已添加至 PATH。
 
 :: 添加环境变量完成后刷新环境设置 
 echo 正在刷新环境变量...  
-powershell -Command "$envVar='Environment';Add-Type -Namespace Win32 -Name NativeMethods -MemberDefinition '[DllImport(\"user32.dll\",SetLastError=true,CharSet=CharSet.Unicode)]public static extern IntPtr SendMessageTimeout(IntPtr hWnd,uint Msg,IntPtr wParam,string lParam,uint fuFlags,uint uTimeout,out IntPtr lpdwResult);';$null=[Win32.NativeMethods]::SendMessageTimeout([intptr]0xffff,0x1A,[intptr]::Zero,$envVar,0,1000,[ref]([intptr]::Zero))"
+powershell -Command "$envVar='Environment';Add-Type -Namespace Win32 -Name NativeMethods -MemberDefinition '[[\"user32.dll\",SetLastError=true,CharSet=CharSet.Unicode)]public static extern IntPtr SendMessageTimeout(IntPtr hWnd,uint Msg,IntPtr wParam,string lParam,uint fuFlags,uint uTimeout,out IntPtr lpdwResult);';$null=[Win32.NativeMethods]::SendMessageTimeout([intptr]0xffff,0x1A,[intptr]::Zero,$envVar,0,1000,[ref]([intptr]::Zero|DllImport(\"user32.dll\",SetLastError=true,CharSet=CharSet.Unicode)]])"
 
 call :OFFLINE_INNER
 goto :DONE
@@ -315,7 +315,7 @@ echo 路径已移除。
 
 :: 添加环境变量完成后刷新环境设置 
 echo 正在刷新环境变量...  
-powershell -Command "$envVar='Environment';Add-Type -Namespace Win32 -Name NativeMethods -MemberDefinition '[DllImport(\"user32.dll\",SetLastError=true,CharSet=CharSet.Unicode)]public static extern IntPtr SendMessageTimeout(IntPtr hWnd,uint Msg,IntPtr wParam,string lParam,uint fuFlags,uint uTimeout,out IntPtr lpdwResult);';$null=[Win32.NativeMethods]::SendMessageTimeout([intptr]0xffff,0x1A,[intptr]::Zero,$envVar,0,1000,[ref]([intptr]::Zero))"
+powershell -Command "$envVar='Environment';Add-Type -Namespace Win32 -Name NativeMethods -MemberDefinition '[[\"user32.dll\",SetLastError=true,CharSet=CharSet.Unicode)]public static extern IntPtr SendMessageTimeout(IntPtr hWnd,uint Msg,IntPtr wParam,string lParam,uint fuFlags,uint uTimeout,out IntPtr lpdwResult);';$null=[Win32.NativeMethods]::SendMessageTimeout([intptr]0xffff,0x1A,[intptr]::Zero,$envVar,0,1000,[ref]([intptr]::Zero|DllImport(\"user32.dll\",SetLastError=true,CharSet=CharSet.Unicode)]])"
 
 
 goto :DONE
