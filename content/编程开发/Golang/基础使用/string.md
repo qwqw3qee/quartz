@@ -79,7 +79,7 @@ Golang`
 ```
 ## 字符串拼接
 常见字符串拼接方式：
-- + 操作符
+- `+` 操作符
 - fmt.Sprintf
 - bytes.Buffer
 - strings.Builder
